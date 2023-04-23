@@ -1701,6 +1701,10 @@ input:checked + .toggle-bg {
   border-bottom-width: 2px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-\[\#06586B42\] {
   border-color: #06586B42;
 }
@@ -2249,6 +2253,11 @@ input:checked + .toggle-bg {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.\!outline-none {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }
 
 .outline {
