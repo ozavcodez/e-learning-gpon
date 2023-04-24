@@ -1334,6 +1334,10 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1400,14 +1404,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[80\] {
-  width: 80;
 }
 
 .max-w-sm {
@@ -2263,11 +2259,6 @@ input:checked + .toggle-bg {
   outline-offset: 2px;
 }
 
-.\!outline-none {
-  outline: 2px solid transparent !important;
-  outline-offset: 2px !important;
-}
-
 .outline {
   outline-style: solid;
 }
@@ -2971,6 +2962,10 @@ input:checked + .toggle-bg {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-96 {
+    height: 24rem;
   }
 
   .lg\:w-\[43\%\] {
