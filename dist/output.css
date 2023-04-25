@@ -1374,6 +1374,10 @@ input:checked + .toggle-bg {
   height: 2.25rem;
 }
 
+.h-\[\] {
+  height: ;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2176,6 +2180,10 @@ input:checked + .toggle-bg {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-extrabold {
