@@ -10,12 +10,4 @@
         background-color: white;
       }
 
-      .caro{
-        height: 800px;
-      }
-
-      @media (min-width:768px) {
-        .caro{
-          height: 384px;
-        }
-      }
+    
