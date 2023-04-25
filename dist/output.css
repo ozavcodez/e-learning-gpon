@@ -1326,10 +1326,6 @@ input:checked + .toggle-bg {
   height: 2rem;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
 .h-96 {
   height: 24rem;
 }
@@ -1340,6 +1336,10 @@ input:checked + .toggle-bg {
 
 .h-\[800px\] {
   height: 800px;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -2751,10 +2751,6 @@ input:checked + .toggle-bg {
     height: 24rem;
   }
 
-  .md\:h-\[3\] {
-    height: 3;
-  }
-
   .md\:h-full {
     height: 100%;
   }
@@ -3032,6 +3028,18 @@ input:checked + .toggle-bg {
 
   .lg\:h-96 {
     height: 24rem;
+  }
+
+  .lg\:h-\[\] {
+    height: ;
+  }
+
+  .lg\:h-\[96\] {
+    height: 96;
+  }
+
+  .lg\:h-9 {
+    height: 2.25rem;
   }
 
   .lg\:w-\[43\%\] {
