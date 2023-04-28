@@ -57,7 +57,7 @@ function  createNav(){
             </li>
         
             <li >
-                <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="purchaseHistory.html">
+                <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="purchasehistory.html">
                     <i class="ri-history-line"></i>
                     <p class="text-[15px] ml-3">Purchase History</p>
                 </a>
