@@ -29,7 +29,7 @@ function  createNav(){
             </li>
             
             <li>       
-                <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="videoLesson.html" >
+                <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="videolesson.html" >
                 <i class="ri-live-line"></i>        
                     <p class="text-[15px] ml-3">Video Tutorial</p> 
                 </a>
@@ -50,7 +50,7 @@ function  createNav(){
             </li>
         
             <li >        
-                <a class="mx-2 flex gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="emptyExam.html" >
+                <a class="mx-2 flex gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="emptyexam.html" >
                     <i class="ri-book-read-fill"></i>
                     <p class="text-[15px] ml-3">Exam</p> 
                 </a>
