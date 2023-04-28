@@ -12,5 +12,34 @@
       .cards {
         @apply bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative 
       }
-
+      .active {
+        @apply bg-[#00A651]
+      }
+      .tab-links{
+        
+        cursor: pointer;
+        position: relative;
     
+    }
+    .tab-links::after{
+      content: '';
+      width:0;
+      background: #00A651;
+      height:4px;
+      left:0;
+      bottom:-8px;
+      transition:5s;
+      position:absolute;
+    }
+    .tab-links.active-class{
+      @apply font-semibold
+    }
+    .tab-links.active-class::after{
+      width:50%
+    }
+    .tab-contents{
+      display:none;
+  }
+    .tab-contents.active-tab{
+      display:block;
+    }

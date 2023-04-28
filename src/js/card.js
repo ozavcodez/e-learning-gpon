@@ -75,7 +75,7 @@ function  createCard(courses){
         
             <div class=" flex justify-around  items-center py-3">
                 
-                <a href="">
+                <a href="courseDescription.html">
                     <div >
                         <button class="bg-[#009348] hover:bg-opacity-80 text-white text:sm  rounded-lg  px-6 py-1 text-bold">More info </button>
                     </div>
