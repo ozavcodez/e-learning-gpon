@@ -105,7 +105,7 @@ function  createNav(){
  const currentLocaction = location.href
 
  navLinks.forEach(navLink => {
-    console.log(navLink)
+    // console.log(navLink)
     if(navLink.href.includes(currentLocaction)){
         navLink.classList.add('active');
     }

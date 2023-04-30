@@ -16,11 +16,13 @@
         <div id="navBar"></div>
         <!-- main view -->
         <div class="ml-60">
-            <header class="top z-40 flex   mt-2 py-3 items-center px-10 text-sm " >
-                <div class="flex md:mt-0 mt-6 md:gap-8 gap-20 text-[#263238] text-lg font-bold">
-                    <svg aria-hidden="true" class="w-10 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                    </svg>
+            <header class="top  z-50  pt-1 sticky   bg-white" >
+                <div class="flex md:mt-0 mt-6 px-10  py-3 md:gap-8 gap-20 text-[#263238] text-lg font-bold">
+                    <a href="availablecourses.html" class="hover:bg-slate-100 rounded-full p-1 ">
+                        <svg aria-hidden="true" class="w-10 h-10 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
+                    </a>
                     <h4 class=" inline-flex text-center ">Financial and Grant management</h4>
                     
                 </div>
@@ -29,7 +31,7 @@
 
             <!-- <hr class="text-white drop-shadow-2xl"> -->
             <!--  view-->
-            <div class=" w-[85%] mr-auto ml-10" >
+            <div class=" w-[85%] mr-auto ml-10 pt-[60px]" >
                 <figure class="relative  ">
                     <div class=" rounded-2xl bg-[#D9D9D9] h-48 w-full">
                     <img src="" alt="" class=" object-cover">
@@ -81,11 +83,50 @@
                         </div>
                         
                     </div>
-                    <div class="active-tab tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 h-80" id="modules">
-                        <p class="p-10 text-justify text-[#4A4242EB] text-opacity-95 text-lg">
-                            Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
-                        </p>
-                        <div></div>
+                    <div class="active-tab tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 " id="modules">
+                        
+                        <div class="border border-[#B7B3B3] mb-2">
+                            <div class="items-center flex justify-between p-5">
+                                <div class="">
+                                    <p class="text-sm text-semibold py-3 text-[#4A4242]">MODULE 1</p>
+                                    <h4 class="font-semibold text-lg text-[#2F4858]">Introduction  to Financial & Management</h4>
+                                </div>
+                                <div class="border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-2 text-bold" >
+                                    <button >Purchase</button>
+                                </div>
+                            </div>
+                            <p class="px-5 pb-2 text-justify text-[#4A4242EB] text-opacity-95 text-sm w-9/12">
+                                Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                            </p>
+                        </div>
+                        <div class="border border-[#B7B3B3]  mb-2">
+                            <div class="items-center flex justify-between p-5">
+                                <div class="">
+                                    <p class="text-sm text-semibold py-3 text-[#4A4242]">MODULE 2</p>
+                                    <h4 class="font-semibold text-lg text-[#2F4858]">Introduction  to Financial & Management</h4>
+                                </div>
+                                <div class="border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-2 text-bold" >
+                                    <button >Purchase</button>
+                                </div>
+                            </div>
+                            <p class="px-5 pb-2 text-justify text-[#4A4242EB] text-opacity-95 text-sm w-9/12">
+                                Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                            </p>
+                        </div>
+                        <div class="border border-[#B7B3B3]  mb-2">
+                            <div class="items-center flex justify-between p-5">
+                                <div class="">
+                                    <p class="text-sm text-semibold py-3 text-[#4A4242]">MODULE 3</p>
+                                    <h4 class="font-semibold text-lg text-[#2F4858]">Introduction  to Financial & Management</h4>
+                                </div>
+                                <div class="border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-2 text-bold" >
+                                    <button >Purchase</button>
+                                </div>
+                            </div>
+                            <p class="px-5 pb-2 text-justify text-[#4A4242EB] text-opacity-95 text-sm w-9/12">
+                                Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,6 +140,7 @@
         var tabcontents=document.getElementsByClassName("tab-contents");
         function opentab(tabname){
             for(tablink of tablinks){
+                console.log(HTMLCollection)
                 tablink.classList.remove("active-class");
             }
             for(tabcontent of tabcontents){
