@@ -15,11 +15,113 @@
 <body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
     <!-- sidebar -->
     <div class=" relative  ">
-        <div id="navBar"></div>
+        <nav id="menu" class=" top-0  fixed z-50 md:z-0 w-80 md:w-60  h-screen  bg-[#2F4858] ">
+                <div class="hidden md:flex items-center gap-2 px-2">
+                    <i class="text-lg text-[#00A651] ri-graduation-cap-line"></i>
+                    <h1 class="font-bold mt-1 text-sm text-white">GPONEDU</h1>
+                </div>
+                <hr class="hidden md:block mt-2 text-white">
+                <div class=" text-white md:hidden md:mt-0 mt-6 md:gap-8 gap-10 ">
+                    <span class="flex items-center">
+                        <img src="Images/user-photozside.png" class="rounded-full ">
+                        <p class="text-[15px] ml-3">Samuel Jhonson <br><span>View profile</span></p>
+                    </span>
+                    <p class="text-sm py-2 text-center" >Become an Instructor</p>
+                </div>
+                    
+                <ul class=" side-nav space-y-1  md:space-y-3 md:px-5 md:pt-10 font-normal text-[#D4C9C9] divide-y divide-white md:divide-none">
+                    <li >
+                        <a href="home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2">
+                            <i class="ri-home-4-line order-last md:-order-last"></i>
+                            <p class="text-[15px] pl-3  "  class="nav-links">Home</p>
+                        </a>
+                    </li>
+                
+                    <li >
+                                    
+                        <a class=" nav-links mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="courses.html" >
+                            <i class="ri-book-mark-line order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3">Courses</p>
+                        </a>
+                    </li>
+                    
+                    <li>       
+                        <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="videolesson.html" >
+                        <i class="ri-live-line order-last md:-order-last"></i>        
+                            <p class="text-[15px] ml-3">Video Tutorial</p> 
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="quiz.html" >
+                            <i class="ri-questionnaire-line order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3"> Quiz</p>
+                        </a>
+                    </li>
+                
+                    <li >
+                        <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="live.html" class="nav-links">
+                            <i class="ri-video-line order-last md:-order-last"></i>
+                        <p class="text-[15px] ml-3">Live Classes</p> 
+                        </a>
+                    </li>
+                
+                    <li >        
+                        <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="emptyexam.html" >
+                            <i class="ri-book-read-fill order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3">Exam</p> 
+                        </a>
+                    </li>
+                
+                    <li >
+                        <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="purchasehistory.html">
+                            <i class="ri-history-line order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3">Purchase History</p>
+                        </a>
+                    </li>
+                
+                    <li >
+                        <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="notification.html" class="nav-links">
+                            <i class="ri-notification-2-line order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3">Notification</p> 
+                        </a>
+                    </li>
+                
+                    <li class="">   
+                        <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="profile.html" >
+                            <i class="ri-user-line order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3">Profile</p> 
+                        </a>
+                    </li>
+                
+                    
+                </ul>
+                <hr class=" mt-3 text-white ">
+                <ul class=" side-nav space-y-1  md:space-y-3 md:px-5  font-normal text-[#D4C9C9] divide-y divide-white md:divide-none">
+                
+                    <li >
+                        
+                        <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="help.html" >
+                            <i class="ri-question-mark order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3">Help</p> 
+                        </a>
+                    </li>
+                
+                    <li  >
+                        <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="signin.html" >
+                            <i class="ri-shut-down-line order-last md:-order-last"></i>
+                            <p class="text-[15px] ml-3">Log Out</p> 
+                        </a>
+                    </li>
+                    
+                </ul>
+            
+        </nav>
+        <!-- <div id="navBar"></div> -->
         
         <!-- main body -->
-        <div class="ml-60 relative">
-            <header class="top z-40 sticky border-b border-white bg-[#2F4858]  py-3   text-sm">
+        <div class="md:ml-60 relative">
+            <header class=" hidden md:block top z-40 sticky border-b border-white bg-[#2F4858]  py-3   text-sm">
                 <div class="items-center grid grid-cols-3">
                     <nav class="col-span-2 ">
                         <ul class="flex gap-x-20">
@@ -32,7 +134,7 @@
                             </li>
         
                             <li class="text-white hover:border-b-2 border-[#00A651]">
-                                <a href="">Enroll for a course</a>
+                                <a href="">Become an Instructor</a>
                             </li>
                         </ul>
                         
@@ -50,7 +152,7 @@
             </header>
 
             <!-- content -->
-            <div class="w-[95%] mx-auto pt-[60px] my-10">
+            <div class="w-[95%] mx-auto md:pt-[60px] md:my-10">
                 <!-- welcome carousel -->
                 <div id="controls-carousel" class="relative w-full" data-carousel="static">
                     <!-- Carousel wrapper -->
@@ -108,15 +210,15 @@
                         </span>
                     </button>
                 </div>
-                <div class=" my-10">
+                <div class=" md:py-10">
                     <h4 class="text-[#263238] text-lg font-semibold"> Course Categories</h4>
                     <div class="py-6 grid grid-cols-6 gap-x-5">
                         <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Business</p>
+                        <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">IT</p>
+                        <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Gender studies</p>
                         <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Business</p>
                         <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Business</p>
-                        <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Business</p>
-                        <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Business</p>
-                        <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Business</p>
+                        <!-- <p class="bg-[#00A651] text-white p-3 text-center rounded-lg text-sm">Business</p> -->
                     </div>
                 </div>
                 <div class="lg:text-xl text-[#263238] courses font-semibold flex justify-between">
@@ -153,7 +255,7 @@
                         <img src="img/7.JPG" alt="" class=" h-32 bg-[#D9D9D9] object-cover w-full">
                         <div class="  space-y-1 p-5">
                             <p class="text-[#655E5EC4] text-opacity-70 text-xs ">Business</p>
-                            <p class="font-semibold text-lg ">Proposal development</p>
+                            <p class="font-semibold text-lg ">PSEA/ Safeguarding</p>
                             <p class="font-semibold text-lg">$50</p>
                             <div class="flex gap-3 items-center">
                                 <img src="Images/monial1.png" alt="" class="rounded-full h-5 w-5">
@@ -203,7 +305,7 @@
                         <img src="img/7.JPG" alt="" class=" h-32 bg-[#D9D9D9] object-cover w-full">
                         <div class="  space-y-1 p-5">
                             <p class="text-[#655E5EC4] text-opacity-70 text-xs ">Business</p>
-                            <p class="font-semibold text-lg ">Proposal development</p>
+                            <p class="font-semibold text-lg ">Supplychain Management </p>
                             <p class="font-semibold text-lg">$50</p>
                             <div class="flex gap-3 items-center">
                                 <img src="Images/monial1.png" alt="" class="rounded-full h-5 w-5">
@@ -228,7 +330,7 @@
                 <!-- end of cards -->
                 <div class=" grid text-lg mt-5 text-[#263238] font-medium">
                     <h1 class="font-semibold text-xl pb-3">More for you</h1>
-                    <a class=" underline  underline-offset-4 " href="">Personal Assignment</a>
+                    <a class=" underline  underline-offset-4 " href="">Financial & Grant MGT</a>
                     <a class="  underline underline-offset-4  pt-2" href="">Discussion  groups</a>
                 </div>
                 

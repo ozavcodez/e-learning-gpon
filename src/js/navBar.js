@@ -94,7 +94,7 @@ function  createNav(){
                 </a>
             </li>
         </ul>
-    </nav>`
+        </nav>`
         document.getElementById("navBar").innerHTML = holder
     
  }
