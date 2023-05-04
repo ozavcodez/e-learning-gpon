@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
     .sticky {
         position: fixed;
         top: 0;

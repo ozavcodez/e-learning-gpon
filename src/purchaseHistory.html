@@ -15,9 +15,22 @@
     <div class="relative">
         <div id="navBar"></div>
         <!-- main view -->
-        <div class="ml-60">
-            <header class="top z-40 flex   mt-1 py-3  px-10 text-sm " >
-                <div class="flex md:mt-0 mt-6 md:gap-8 gap-20 item-center text-[#263238] text-lg font-bold">
+        <div class="md:ml-60">
+            <header class="top z-40 md:flex   mt-1 py-3  md:px-10 text-sm " >
+                <div class="items-center md:hidden flex justify-around">
+                    <div class=" " onclick="showMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#009348"></path></svg>
+                    </div>
+                    <div class="flex items-center ">
+                        <img src="Images/goalbglogo.png" alt="">
+                        <p class="pl-2 ">Gponedu</p>
+                    </div>
+                    <div>
+                        <i class=" text-2xl ri-notification-2-line"></i>
+
+                    </div>
+                </div>
+                <div class="hidden md:flex md:mt-0 mt-6 md:gap-8 gap-20 item-center text-[#263238] text-lg font-bold">
                     <a href="home.html" class="hover:bg-slate-100 rounded-full p-1 ">
                         <svg aria-hidden="true" class="w-10 h-10 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
@@ -34,7 +47,7 @@
             <div class=" w-[95%] mx-auto mt-10" >
                 <div class="flex justify-center ">
                     <div class="space-y-5">
-                        <img src="Images/nocourse-img.png" alt="" class="w-72 mx-auto">
+                        <img src="Images/nocourse-img.png" alt="" class="w-48 md:w-72 mx-auto">
                         <h4 class="text-center text-[#263238] text-lg font-bold">Your purchase history is empty</h4>
                         <p class="text-center text-lg  text-[#4A4242]">Enroll for a course today or check available <br> courses to enroll</p>
                         <div class="text-center">

@@ -9,104 +9,57 @@
 </head>
 <body>
     <div class="relative">
-        <nav id="menu" class=" top-0 fixed z-50 md:z-0  w-60   ">
-            <div class="h-screen  bg-[#2F4858]">
-                <div class="logo flex justify-between gap-2 mx-5  py-3">
-                    <div class="flex items-center gap-2 px-2">
-                        <i class="text-lg text-[#00A651] ri-graduation-cap-line"></i>
-                        <h1 class="font-bold mt-1 text-sm text-white">GPONEDU</h1>
+        
+        <!-- courses cards -->
+        <div class="md:ml-60 relative w-full mx-auto ">
+            <header class="  w-full top z-40 sticky md:border-b md:border-white bg-white md:bg-[#2F4858]  py-3   text-sm">
+                <div class="items-center md:hidden flex justify-around">
+                    <div class=" " onclick="showMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#009348"></path></svg>
                     </div>
-                    <i id="burger" class="md:hidden text-2xl ri-menu-line"></i>
+                    <div class="flex ">
+                        <img src="Images/goalbglogo.png" alt="">
+                        <p class="pl-2 ">Gponedu</p>
+                    </div>
+                    <div>
+                        <i class=" text-2xl ri-notification-2-line"></i>
+
+                    </div>
                 </div>
-                <hr class="mt-2 text-white">
+                <div class="items-center  hidden md:grid grid-cols-3">
                     
-                <ul class=" side-nav space-y-1  md:space-y-3 px-5 pt-10 font-normal text-[#D4C9C9]">
-                    <li >
-                        <a href="home.html" class="mx-2 flex gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2">
-                            <i class="ri-home-4-line"></i>
-                            <p class="text-[15px] ml-3"  class="nav-links">Home</p>
-                        </a>
-                    </li>
-                
-                    <li >
-                                    
-                        <a class=" nav-links mx-2 flex gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="courses.html" >
-                            <i class="ri-book-mark-line"></i>
-                            <p class="text-[15px] ml-3">Courses</p>
-                        </a>
-                    </li>
-                    
-                    <li>       
-                        <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="videolesson.html" >
-                        <i class="ri-live-line"></i>        
-                            <p class="text-[15px] ml-3">Video Tutorial</p> 
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="quiz.html" >
-                            <i class="ri-questionnaire-line"></i>
-                            <p class="text-[15px] ml-3"> Quiz</p>
-                        </a>
-                    </li>
-                
-                    <li >
-                        <a class="mx-2 flex gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="live.html" class="nav-links">
-                            <i class="ri-video-line"></i>
-                        <p class="text-[15px] ml-3">Live Classes</p> 
-                        </a>
-                    </li>
-                
-                    <li >        
-                        <a class="mx-2 flex gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="emptyexam.html" >
-                            <i class="ri-book-read-fill"></i>
-                            <p class="text-[15px] ml-3">Exam</p> 
-                        </a>
-                    </li>
-                
-                    <li >
-                        <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="purchasehistory.html">
-                            <i class="ri-history-line"></i>
-                            <p class="text-[15px] ml-3">Purchase History</p>
-                        </a>
-                    </li>
-                
-                    <li >
-                        <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="notification.html" class="nav-links">
-                            <i class="ri-notification-2-line"></i>
-                            <p class="text-[15px] ml-3">Notification</p> 
-                        </a>
-                    </li>
-                
-                    <li >   
-                        <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="profile.html" >
-                            <i class="ri-user-line"></i>
-                            <p class="text-[15px] ml-3">Profile</p> 
-                        </a>
-                    </li>
-                
-                    <hr class="mt-3 text-white">
-                
-                    <li >
+                    <nav class="hidden md:block col-span-2 ">
+                        <ul class="flex gap-x-20">
+                            <li class="text-white hover:border-b-2 border-[#00A651]">
+                                <a href="">Home</a>
+                            </li>
+        
+                            <li class="text-white hover:border-b-2 border-[#00A651]">
+                                <a href="">Announcement</a>
+                            </li>
+        
+                            <li class="text-white hover:border-b-2 border-[#00A651]">
+                                <a href="">Become an Instructor</a>
+                            </li>
+                        </ul>
                         
-                        <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="help.html" >
-                            <i class="ri-question-mark"></i>
-                            <p class="text-[15px] ml-3">Help</p> 
-                        </a>
-                    </li>
+                    </nav>
+                    <div class=" hidden md:flex md:gap-8  ">
+                        <i class="mt-1 text-2xl md:text-white ri-notification-2-line"></i>
+                        <span class="flex items-center">
+                            <img src="Images/user-photoz.png" class="rounded-full ">
+                            <i class="mt-1 ml-3 ri-arrow-down-s-fill text-white"></i>
+                        </span>
+                    </div>
+                </div>
                 
-                    <li  >
-                        <a class="nav-links mx-2 flex mt-1 gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="signin.html" >
-                            <i class="ri-shut-down-line"></i>
-                            <p class="text-[15px] ml-3">Log Out</p> 
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                
+            </header>
+
+            <!-- content -->
             
-        </nav>
-         <!-- courses cards -->
-         <div class="grid grid-cols-3 gap-10 mt-10 ml-60" id="card"></div>
+
+
         </div>
     </div>
    
