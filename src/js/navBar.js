@@ -3,7 +3,7 @@ function  createNav(){
     
         holder +=
         `<nav id="menu" class="top-0 hidden md:block  z-50 md:z-0 w-[80%] md:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300">
-        <div class="hidden md:flex items-center gap-2 px-2 py-3">
+        <div class="hidden md:flex items-center gap-2 px-8 py-3">
             <i class="text-lg text-[#00A651] ri-graduation-cap-line"></i>
             <h1 class="font-bold mt-1 text-sm text-white">GPONEDU</h1>
         </div>
@@ -23,7 +23,7 @@ function  createNav(){
                 
         <ul class=" side-nav space-y-1  md:space-y-3 md:px-5 md:mt-10 font-normal text-[#D4C9C9] divide-y divide-white md:divide-none">
             <li >
-                <a href="home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2">
+                <a href="home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2">
                     <i class="ri-home-4-line order-last md:-order-last"></i>
                     <p class="text-[15px] pl-3  "  class="nav-links">Home</p>
                 </a>
@@ -31,56 +31,56 @@ function  createNav(){
         
             <li >
                             
-                <a class=" nav-links mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="courses.html" >
+                <a class=" nav-links mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="courses.html" >
                     <i class="ri-book-mark-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Courses</p>
                 </a>
             </li>
             
             <li>       
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="videolesson.html" >
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="videolesson.html" >
                 <i class="ri-live-line order-last md:-order-last"></i>        
                     <p class="text-[15px] ml-3">Video Tutorial</p> 
                 </a>
             </li>
         
             <li>
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="quiz.html" >
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="quiz.html" >
                     <i class="ri-questionnaire-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3"> Quiz</p>
                 </a>
             </li>
         
             <li >
-                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="liveclass.html" class="nav-links">
+                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="liveclass.html" class="nav-links">
                     <i class="ri-video-line order-last md:-order-last"></i>
                 <p class="text-[15px] ml-3">Live Classes</p> 
                 </a>
             </li>
         
             <li >        
-                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#00A651] py-2 px-2" href="emptyexam.html" >
+                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="emptyexam.html" >
                     <i class="ri-book-read-fill order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Exam</p> 
                 </a>
             </li>
         
             <li >
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="purchasehistory.html">
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="purchasehistory.html">
                     <i class="ri-history-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Purchase History</p>
                 </a>
             </li>
         
             <li >
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="notification.html" class="nav-links">
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="notification.html" class="nav-links">
                     <i class="ri-notification-2-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Notification</p> 
                 </a>
             </li>
         
             <li class="">   
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="profile.html" >
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="profile.html" >
                     <i class="ri-user-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Profile</p> 
                 </a>
@@ -93,14 +93,14 @@ function  createNav(){
         
             <li >
                 
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="help.html" >
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="help.html" >
                     <i class="ri-question-mark order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Help</p> 
                 </a>
             </li>
         
             <li  >
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#00A651] py-2 px-2" href="signin.html" >
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="signin.html" >
                     <i class="ri-shut-down-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Log Out</p> 
                 </a>
