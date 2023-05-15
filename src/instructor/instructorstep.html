@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/src/output.css" rel="stylesheet">
+    
+
+</head>
+<body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
+    <header class="  top z-40 sticky border-b border-white bg-white md:bg-[#2F4858] flex items-center gap-32 py-3   text-sm">
+        <div class="items-center  flex justify-around ">
+            <div class="md:hidden " onclick="showMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#009348"></path></svg>
+            </div>
+            <div class="pl-20">
+                <img src="/src/Images/goalPrimeLogoe.png" alt="" class="">
+            </div>
+            <div class="md:hidden">
+                <i class=" text-2xl ri-notification-2-line"></i>
+
+            </div>
+        </div>
+        <div class="items-center hidden md:grid grid-cols-3">
+            <nav class="col-span-2 ">
+                <ul class="flex gap-x-5 lg:gap-x-20">
+                    <li class="text-white hover:border-b-2 border-[#00A651]">
+                        <a href="">Home</a>
+                    </li>
+
+                    <li class="text-white hover:border-b-2 border-[#00A651]">
+                        <a href="">Announcement</a>
+                    </li>
+
+                    <li class="text-white hover:border-b-2 border-[#00A651]">
+                        <a href="">Become an Instructor</a>
+                    </li>
+                </ul>
+                
+            </nav>
+            
+        </div>
+        
+        
+    </header>
+    <!-- main content -->
+    <div class="pt-[60px]  ">
+        <form action="">
+            <div class="flex justify-between items-center">
+                <div class="tab-targets ">
+                    <div class=" tab hidden active">Step1 of 4</div>
+                    <div class="tab hidden">Step2 of 4</div>
+                    <div class="tab hidden">Step3 of 4</div>
+                    <div class="tab hidden">Step4 of 4</div>
+                   
+                </div>
+                <div>
+                    <button class="pointer text-[#2F4858] text-lg  pr-32">Exit</button>
+                </div>
+                
+            </div>
+            <div class="w-full bg-[#D9D9D9] rounded-full h-[3px] dark:bg-gray-700">
+                <div class="bg-[#2F4858] h-[3px] rounded-full" style="width: 25%" id="pb"></div>
+            </div>
+            
+            <div class="tab-lists w-[90%] mx-auto">
+                <div class="tabpanel">
+                    <fieldset class="">
+                        <legend class=" items-start text-2xl  text-[#2F4858] py-5 md:w-full">What sort of education have you taught in the past?</legend>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="informal"   name="education" class=" w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> In person, informally</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="Professionally"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> In person, Professionally</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="online"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Online</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="Others"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> In person, informally</label>                              
+                        </div>
+                            
+                    </fieldset>
+                </div>
+                <div class="tabpanel hidden">
+                    <fieldset class="">
+                        <legend class=" items-start text-2xl  text-[#2F4858] py-5 md:w-full">How many years of teaching experience do you have?</legend>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="1-2"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> 1-2</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="2-4"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> 2-4</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="3-4"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> 3-4</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="others"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Others</label>                              
+                        </div>
+                            
+                    </fieldset>
+                </div>
+                <div class="tabpanel hidden">
+                    <fieldset class="">
+                        <legend class=" items-start text-2xl  text-[#2F4858] py-5 md:w-full">Which course do you intend to instruct?</legend>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="finance"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Financial and Grant Management</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="supplychain"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> SupplyChain Management</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="psea"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> PSEA/ sSafeguarding</label>                              
+                        </div>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
+                            <input  id="" type="radio" value="proposaldev"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Proposal Development</label>                              
+                        </div>
+                            
+                    </fieldset>
+                </div>
+                <div class="tabpanel hidden">
+                    <h3 class=" pt-10 items-start text-2xl  text-[#2F4858] py-5 md:w-full" >Upload your qualifications</h3>
+                    <label for="pic">
+                        <div class="px-10 my-20 py-3 bg-[#005B6F73] bg-opacity-40 text-[#2F4858] text-center text-lg font-semibold w-32">
+                            <input  type="file" name="" id="pic" class="sr-only" >
+                            <p class="">Upload</p>
+                        </div>
+                    </label>
+                    
+                    
+                </div>
+
+                <!-- pagination button -->
+                <div class="pagination mt-5 mb-5 md:mb-0 flex items-center justify-between">
+                    <button class="pointer hidden bg-[#009348] text-white text-center py-3 px-10 hover:bg-opacity-95" id="prev">Previous</button>
+                    <button class="pointer bg-[#009348] text-white text-center py-3 px-10 hover:bg-opacity-95" id="next">Continue</button>
+                    <button class="pointer hidden bg-[#009348] text-white text-center py-3 px-10 hover:bg-opacity-95" id="submit">Submit</button>
+                </div>
+            </div>
+            
+
+                
+        </form>
+    </div>
+
+    <script src="/src/js/step.js"></script>
+</body>
+</html>

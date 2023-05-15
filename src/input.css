@@ -19,6 +19,15 @@
       .active {
         @apply bg-[#00A651]
       }
+      .tab-targets .tab.active{
+        color: #2F4858;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 4px;
+        padding-left: 80px;
+        display: block;
+        background: inherit;
+      }
       .tab-links{
         
         cursor: pointer;

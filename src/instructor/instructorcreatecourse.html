@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <div class=" hidden  grid-cols-12 pt-[60px] my-10 gap-2 ">
+<body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
+    <div class="  grid grid-cols-12 pt-[60px] my-10 gap-2 ">
         <div class=" col-span-11 grid grid-cols-3 gap-10 w-[90%] mx-auto  ">
             <div class=" " >
                 <figure class="relative  ">
@@ -109,7 +110,7 @@
         <div >
             <div class="rounded-full bg-[#00A651] h-14 w-14 ml-3 ">
                 <div class="flex justify-center py-4 ">
-                    <i class=" text-white ri-add-line"></i>
+                    <i class="text-white ri-add-line"></i>
 
                 </div>
             </div>
@@ -118,40 +119,7 @@
         </div>
     </div>
 
-    <form action="" class="hidden pt-[60px] w-[60%] mr-auto ml-10 ">
-        <div class="space-y-5 text-[#4A4242]">
-            <div class= "flex flex-col items-start   " >
-                <label class=" md:my-[5px] inline-block font-semibold text-sm" for="">Course</label>
-                <Select class="  w-full p-3 mt-2 rounded-lg  border-none shadow-md font-medium bg-[#FAFAFA] focus:ring-0 outline-none focus:outline-none"  id="">
-                     
-                    <option value=""> </option>
-                    <option value=""></option>
-                </Select>
-            </div>
-            <div class= "flex flex-col items-start   ">
-                <p class="md:my-[5px] inline-block font-semibold text-sm">Select image</p>
-                <label class="  w-full p-3 mt-2 rounded-lg  border-none shadow-md font-medium bg-[#FAFAFA] focus:ring-0 outline-none focus:outline-none "  for="pic">
-                    <div >
-                        <input  type="file" name="" id="pic" class="sr-only" >
-                        <p class="float-right underline text-xs last:text-[#4A4242]">browse</p>
-                    </div>
-                </label>
-                
-            </div>
-            <div  class= "flex flex-col items-start ">
-                <label class=" md:my-[5px] inline-block font-semibold text-sm"  for="">Meeting Topic</label>
-                <input id=""  class="  w-full p-3 mt-2 rounded-lg  border-none shadow-md font-medium bg-[#FAFAFA] focus:ring-0 outline-none focus:outline-none" type="text" placeholder="">
-            </div>
-            <div></div>
-            <button class= "w-full p-3 mt-10 rounded-lg bg-[#00A651] text-white text-center border-none shadow-md font-medium  focus:ring-0 outline-none focus:outline-none">
-                <div  >
-                    <p class=" md:my-[5px] inline-block font-semibold text-sm "  for="">Create class</p>
-                </div>
-            </button>
-            
-        </div>
-        
-    </form>
+   
     
 </body>
 </html>
