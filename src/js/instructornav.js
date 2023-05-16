@@ -23,7 +23,7 @@ function  createNav(){
                 
         <ul class=" side-nav space-y-1  md:space-y-3 md:px-5 md:mt-10 font-normal text-[#D4C9C9] divide-y divide-white md:divide-none">
             <li >
-                <a href="instructor/home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2">
+                <a href="home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2">
                     <i class="ri-home-4-line order-last md:-order-last"></i>
                     <p class="text-[15px] pl-3  "  class="nav-links">Home</p>
                 </a>
@@ -52,7 +52,7 @@ function  createNav(){
             </li>
         
             <li >
-                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="liveclass.html" class="nav-links">
+                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="live.html" class="nav-links">
                     <i class="ri-video-line order-last md:-order-last"></i>
                 <p class="text-[15px] ml-3">Live Classes</p> 
                 </a>
