@@ -31,7 +31,7 @@ function  createNav(){
         
             <li >
                             
-                <a class=" nav-links mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="courses.html" >
+                <a class=" nav-links mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="createcourse.html" >
                     <i class="ri-book-mark-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Courses</p>
                 </a>

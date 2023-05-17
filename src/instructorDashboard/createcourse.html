@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="../output.css" rel="stylesheet">
+
+</head>
+<body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
+    <div class="relative">
+        <!-- sidebar -->
+        <div id="navBar"></div>
+        <!-- mainbody -->
+       <div class="md:ml-60">
+            <header class="top  z-50  pt-1 sticky   bg-white" >
+                <div class="items-center md:hidden flex justify-around">
+                    <div class=" " onclick="showMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#009348"></path></svg>
+                    </div>
+                    <div class="flex items-center ">
+                        <img src="Images/goalbglogo.png" alt="">
+                        <p class="pl-2 ">Gponedu</p>
+                    </div>
+                    <div>
+                        <i class=" text-2xl ri-notification-2-line"></i>
+
+                    </div>
+                </div>
+                <div class=" hidden md:flex md:mt-0 mt-6 px-10  py-3 md:gap-8 gap-20 text-[#263238] text-lg font-bold">
+                    <a href="home.html" class="hover:bg-slate-100 rounded-full p-1 ">
+                        <svg aria-hidden="true" class="w-10 h-10 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
+                    </a>
+                    <h4 class=" inline-flex text-center ">Create classes</h4>
+
+                    
+                </div>
+                <div class="border-2 border-b shadow-2xl "></div>
+
+                <!-- content -->
+                
+            </header>
+
+            <form action="" class=" pt-[60px] w-[60%] my-10 mr-auto ml-10 ">
+                <div class="space-y-5 text-[#4A4242]">
+                    
+                    <div class= "grid grid-cols-6  items-center   " >
+                        <label class=" inline-block font-semibold text-sm" for="">Course</label>
+                        <Select  class=" col-span-5  w-full p-3 mt-2 rounded-lg  text-center border-[#4A4242] border-opacity-30 shadow-md font-medium focus:border-[#FAFAFA] focus:ring-0 outline-none focus:outline-none"  id="">
+                            
+                            <option value="" class="">Finance</option>
+                            <option value="">Finance</option>
+                        </Select>
+                    </div>
+                    <div class= "grid grid-cols-6  items-center ">
+                        <p class=" inline-block font-semibold text-sm">Select image</p>
+                        <label class=" col-span-5  w-full p-3 mt-2 rounded-lg border border-[#4A4242] border-opacity-30 shadow-md font-medium focus:border-[#FAFAFA] focus:ring-0 outline-none focus:outline-none"  for="pic">
+                            <div >
+                                <input  type="file" name="" id="pic" class="sr-only" >
+                                <p class=" text-base last:text-[#4A4242] text-center">Browse</p>
+                            </div>
+                        </label>
+                        
+                    </div>
+                    <div class= "grid grid-cols-6  items-center ">
+                        <p class=" inline-block font-semibold text-sm">Video</p>
+                        <label class=" col-span-5  w-full p-3 mt-2 rounded-lg  border border-[#4A4242] border-opacity-30  font-medium shadow-md focus:border-[#FAFAFA] focus:ring-0 outline-none focus:outline-none  "  for="pic">
+                            <div >
+                                <input  type="file" name="" id="pic" class="sr-only" >
+                                <p class=" text-base last:text-[#4A4242] text-center">Browse</p>
+                            </div>
+                        </label>
+                        
+                    </div>
+                    <div  class= "grid grid-cols-6  items-center ">
+                        <label class="  inline-block font-semibold text-sm"  for="">Title</label>
+                        <input id=""  class=" col-span-5  w-full p-3 mt-2 rounded-lg  border-[#4A4242] border-opacity-30 shadow-md font-medium focus:border-[#FAFAFA] focus:ring-0 outline-none focus:outline-none" type="text" placeholder="">
+                    </div>
+                    <div  class= "grid grid-cols-6  items-center" >
+                        <label class="inline-block font-semibold text-sm" for="">Desc:</label>
+                        <textarea  class="  col-span-5  w-full p-3 mt-2 rounded-lg  border-[#4A4242] border-opacity-30 shadow-md font-medium focus:border-[#FAFAFA] focus:ring-0 outline-none focus:outline-none"  name="" id="" cols="30" rows="7"></textarea>
+                    </div>
+                    <div class="grid grid-cols-6  items-center">
+                        <div></div>
+                        <button class= " col-span-5 w-full p-3 my-10 rounded-lg bg-[#00A651] text-white text-center border-none shadow-md font-medium  focus:ring-0 outline-none focus:outline-none">
+                            <div  >
+                                <p class=" md:my-[5px] inline-block font-semibold text-sm "  for="">Create class</p>
+                            </div>
+                        </button>
+                        <!-- <input type="range" name="" id=""> -->
+                    </div>
+                    
+                </div>
+                
+            </form>
+       </div> 
+        
+    </div>
+
+    <script src="../js/instructornav.js"></script> 
+</body>
+</html>
