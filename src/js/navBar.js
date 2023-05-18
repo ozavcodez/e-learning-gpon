@@ -2,7 +2,7 @@ function  createNav(){
     var holder =""
     
         holder +=
-        `<nav id="menu" class="top-0 hidden md:block  z-50 md:z-0 w-[80%] md:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300">
+        `<nav id="menu" class="top-0 hidden md:block  z-50 md:z-0 w-[80%] md:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300 overflow-y-scroll md:overflow-hidden">
         <div class="hidden md:flex items-center gap-2 px-8 py-3">
             <i class="text-lg text-[#00A651] ri-graduation-cap-line"></i>
             <h1 class="font-bold mt-1 text-sm text-white">GPONEDU</h1>
