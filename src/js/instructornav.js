@@ -15,7 +15,7 @@ function  createNav(){
                 </svg>
             </div>            
             <span class="flex items-center ">
-                <img src="Images/user-photozside.png" class="rounded-full ">
+                <img src="../Images/user-photozside.png" class="rounded-full ">
                 <p class="text-[15px] ml-3">Samuel Jhonson <br><span>View profile</span></p>
             </span>
             <p class="text-base py-2 text-center" >Become an Instructor</p>
@@ -40,7 +40,7 @@ function  createNav(){
             <li>       
                 <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="videolesson.html" >
                 <i class="ri-live-line order-last md:-order-last"></i>        
-                    <p class="text-[15px] ml-3">Video Tutorial</p> 
+                    <p class="text-[15px] ml-3">Assignment</p> 
                 </a>
             </li>
         
@@ -68,7 +68,7 @@ function  createNav(){
             <li >
                 <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="purchasehistory.html">
                     <i class="ri-history-line order-last md:-order-last"></i>
-                    <p class="text-[15px] ml-3">Purchase History</p>
+                    <p class="text-[15px] ml-3">Announcement</p>
                 </a>
             </li>
         
