@@ -10,227 +10,401 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="../output.css" rel="stylesheet">
-
 </head>
 <body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
     <div class="relative">
-        <!-- sidebar -->
         <div id="navBar"></div>
-        <!-- mainbody -->
-        <div class="md:ml-60 relative">
-            <header class="  top z-40 sticky border-b border-white bg-white md:bg-[#2F4858]  py-3   text-sm">
+        <!-- main view -->
+        <div class="lg:ml-60 pb-10">
+            <header class="top  z-40  pt-1 sticky   bg-white" >
                 <div class="items-center md:hidden flex justify-around">
                     <div class=" " onclick="showMenu()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#009348"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#2F4858"></path></svg>
                     </div>
                     <div class="flex items-center ">
-                        <img src="Images/goalbglogo.png" alt="">
-                        <p class="pl-2 font-semibold">Gponedu</p>
+                        <img src="../Images/goalbglogo.png" alt="" class="w-10">
+                        <p class="pl-1 font-extrabold text-[#2F4858] text-xs">GoalPrime Education</p>
                     </div>
                     <div>
                         <i class=" text-2xl ri-notification-2-line"></i>
 
                     </div>
                 </div>
-                <div class="items-center hidden md:grid grid-cols-3">
-                    <nav class="col-span-2 ">
-                        <ul class="flex gap-x-5 lg:gap-x-20">
-                            <li class="text-white hover:border-b-2 border-[#00A651]">
-                                <a href="">Courses</a>
-                            </li>
-        
-                            <li class="text-white hover:border-b-2 border-[#00A651]">
-                                <a href="/src/instructor/instructorstep.html">Become an Instructor</a>
-                            </li>
-                        </ul>
-                        
-                    </nav>
-                    <div class="flex md:mt-0 mt-6 md:gap-8 gap-10 ">
-                        <i class="mt-1 text-2xl text-white ri-notification-2-line"></i>
-                        <span class="flex items-center">
-                            <img src="/src/Images/user-photoz.png" class="rounded-full ">
-                            <i class="mt-1 ml-3 ri-arrow-down-s-fill text-white"></i>
-                        </span>
-                    </div>
-                </div>
-                
-                
-            </header>
-            <!-- main content -->
-            <div  class=" md:w-[85%] mr-auto ml-10 pt-[60px] my-10 rounded-sm">
-                <div class="bg-[#D9D9D9] h-48 w-full">
-                    <img src="" alt="" class=" object-cover">
-    
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 my-10">
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">cohorts</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">2256</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-team-line"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-bold text-base tracking-wide leading-relaxed">view</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">Assignment</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">12</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-file-text-line"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-normal text-[#455A64] text-sm tracking-wide leading-relaxed">Updated hour ago</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">Quiz</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">12</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-questionnaire-line"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-normal text-[#455A64] text-sm tracking-wide leading-relaxed">Updated hour ago</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">Courses</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">4</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-book-mark-line"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-normal text-[#455A64] text-sm tracking-wide leading-relaxed">Updated hour ago</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">Exam</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">10</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-book-read-fill"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-normal text-[#455A64] text-sm tracking-wide leading-relaxed">Updated hour ago</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">Certification</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">50</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-file-text-line"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-normal text-[#455A64] text-sm tracking-wide leading-relaxed">Updated hour ago</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">Create Courses</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">12</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-file-text-line"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-normal text-[#455A64] text-sm tracking-wide leading-relaxed">Updated hour ago</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
-                        <div class="flex justify-between items-start ">
-                            <div class="">
-                                <h4 class="font-bold text-sm tracking-wide leading-relaxed">Announcement</h4>
-                                <h2 class="font-semibold text-2xl tracking-wider leading-relaxed">12</h2>
-                            </div>
-                            <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
-                                <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-file-text-line"></i>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="flex justify-between font-bold">
-                            <h4 class="font-normal text-[#455A64] text-sm tracking-wide leading-relaxed">Updated hour ago</h4>
-                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
+                <div class="hidden md:flex md:mt-0 mt-6 px-10  py-3 md:gap-8 gap-20 text-[#263238] text-lg font-bold">
+                    <a href="courses.html" class="hover:bg-slate-100 rounded-full p-1 ">
+                        <svg aria-hidden="true" class="w-10 h-10 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
+                    </a>
+                    <h4 class=" inline-flex text-center ">cohorts</h4>
                     
                 </div>
-            </div>
-            
-        </div>
-        
-    </div>
+                <div class="border-2 border-b shadow-2xl "></div>
 
-    <script src="../js/instructornav.js"></script> 
+            </header>
+
+            <!-- view -->
+            <div class=" w-[90%] mx-auto mt-10 pt-[60px]" >
+            <div class="overflow-hidden shadow-md sm:rounded-lg relative">
+                <!-- search bar -->
+                <!-- <div class="text-[#4A424294] text-opacity-50 ">
+                    <input type="text" placeholder="search students name" class="focus:border-current outline-none bg-transparent w-full text-lg m-2 py-2 md:py-3 rounded-full focus:ring-0">
+                </div> -->
+                <form class="flex items-center p-5">
+                    <label for="simple-search" class="sr-only">Search</label>
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-0 focus:border-none block w-full pl-5 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Search cohort" required="">
+                    </div>
+                </form>
+                <div class=" overflow-x-auto ">
+                    <table class="w-full text-sm text-left text-[#667085] dark:text-gray-400">
+                        <thead class="text-xs  uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    S/N
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    FULL NAME
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                   IMAGE
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    EMAIL ADDRESS
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/001
+                                </th>
+                                <td class="px-6 py-4">
+                                    ONCHE BONFACE AUSTIN
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    onche@gmail.com
+                                </td>
+                                <td class="px-6 py-4 ">
+                                    <button id="first-dropdown-button" data-dropdown-toggle="first-dropdown" class="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
+                                        <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                    </button>
+                                    <div id="first-dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="first-dropdown-button">
+                                            <li>
+                                                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Show</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                            </li>
+                                        </ul>
+                                        <div class="py-1">
+                                            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                                        </div>
+                                    </div>
+                                </td>
+                               
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/002
+                                </th>
+                                <td class="px-6 py-4">
+                                    OZAVIZE JOY
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    ozavizejoy@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/003
+                                </th>
+                                <td class="px-6 py-4">
+                                    DONALD OJIE
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    donaldojie@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/004
+                                </th>
+                                <td class="px-6 py-4">
+                                    OPARAIHEOMA EBUKA DAVID
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                   ebukadavid@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/005
+                                </th>
+                                <td class="px-6 py-4">
+                                    PETER LUKE
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    peterluke@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/006
+                                </th>
+                                <td class="px-6 py-4">
+                                    MEARAH BALA
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    meerahbala@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/007
+                                </th>
+                                <td class="px-6 py-4">
+                                    AMAH NOAH
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    amahnoah@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/008
+                                </th>
+                                <td class="px-6 py-4">
+                                    Samuel Gooday
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    samualgooday@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/009
+                                </th>
+                                <td class="px-6 py-4">
+                                    Michael
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    michael@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/010
+                                </th>
+                                <td class="px-6 py-4">
+                                    Chiamaka francis
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    chiamakafrancis@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/011
+                                </th>
+                                <td class="px-6 py-4">
+                                    Emmanuel Friday
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    emmanuelfriday@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-[#00A651] bg-gray-100 border-gray-300 rounded focus:ring-[#00A651] dark:focus:ring-[#00A651] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                    </div>
+                                </td>
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    <strong>GPONEDU</strong>/012
+                                </th>
+                                <td class="px-6 py-4">
+                                    Onuoha Prosper
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img src="../Images/account_circle.png" alt="">
+                                </td>
+                                <td class="px-6 py-4">
+                                    onuohaprosper@gmail.com
+                                </td>
+                                
+                                <td class="px-6 py-4">
+                                    <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+                
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../js/navBar.js"></script>
+    <script src="../lib/flowbite.min.js"></script>
+
 </body>
 </html>

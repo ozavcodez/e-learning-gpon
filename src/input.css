@@ -56,3 +56,14 @@
     .tab-contents.active-tab{
       display:block;
     }
+
+    .overflowHidden {
+      overflow: hidden;
+      margin: 0;
+      touch-action: none;
+      -ms-touch-action: none;
+      /* position: fixed; we get rid of this line which resets the flow of the page */
+      /* height: 100%; we change 100% to 100vh */ 
+      height: 100vh;
+    
+    }

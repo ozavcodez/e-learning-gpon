@@ -2,19 +2,19 @@ function  createNav(){
     var holder =""
     
         holder +=
-        `<nav id="menu" class="top-0 hidden md:block  z-50 md:z-0 w-[80%] md:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300 overflow-y-scroll md:overflow-hidden">
+        `<nav id="menu" class="top-0 hidden lg:block  z-50 lg:z-0 w-[80%] lg:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300 overflow-y-scroll md:overflow-hidden">
         <div class="hidden md:flex items-center gap-2 px-8 py-3">
-            <i class="text-lg text-[#00A651] ri-graduation-cap-line"></i>
+            <img src="Images/goalPrimeLogoe.png" alt="" class="w-16">
             <h1 class="font-bold mt-1 text-sm text-white">GPONEDU</h1>
         </div>
-        <hr class="hidden md:block mt-2 text-white">
-        <div class=" text-white md:hidden md:mt-0 mt-6 md:gap-8 gap-10  pl-3">
+        <hr class="hidden lg:block mt-2 text-white">
+        <div class=" text-white lg:hidden md:mt-0 mt-6 md:gap-8 gap-10  pl-3">
             <div onclick=hideNav()>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-6 duration-700 cursor-pointer md:hidden  float-right m-3 " id="times" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-6 duration-700 cursor-pointer lg:hidden  float-right m-3 " id="times" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"  />
                 </svg>
             </div>            
-            <span class="flex items-center ">
+            <span class="flex items-center  ">
                 <img src="Images/user-photozside.png" class="rounded-full ">
                 <p class="text-[15px] ml-3">Samuel Jhonson <br><span>View profile</span></p>
             </span>
@@ -142,3 +142,6 @@ function showMenu(){
         menu.classList.add('hidden');
     }
 }
+
+let html = document.querySelector("body");
+console.log(html);

@@ -61,8 +61,8 @@ function  createCard(courses){
     var holder =""
     for(var i in courses){
         holder +=
-        `<div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative md:w-[350px] ">
-            <img src="${courses[i].courseImg}G" alt="" class=" h-32 bg-[#D9D9D9] object-cover w-full">
+        `<div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative xl:w-[350px] ">
+            <img src="${courses[i].courseImg}" alt="" class=" h-32 bg-[#D9D9D9] object-cover w-full">
             <div class="  space-y-1 p-5">
                 <p class="text-[#655E5EC4] text-opacity-70 text-xs ">${courses[i].title}</p>
                 <p class="font-semibold text-lg ">${courses[i].course}</p>
