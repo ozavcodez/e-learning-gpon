@@ -16,7 +16,7 @@
         <div id="navBar"></div>
         <!-- main view -->
         <div class="lg:ml-60">
-            <header class="top  z-50  pt-1 sticky   bg-white" >
+            <header class="top  z-40  pt-1 sticky   bg-white" >
                 <div class="items-center lg:hidden flex justify-around">
                     <div class=" " onclick="showMenu()">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#2F4858"></path></svg>
@@ -32,9 +32,10 @@
                 </div>
                 <div class="hidden lg:flex md:mt-0 mt-6  px-2 md:px-10  py-3 md:gap-8 gap-6 items-center text-[#263238] text-sm md:text-lg font-bold">
                     <a href="courses.html" class="hover:bg-slate-100 rounded-full p-1 ">
-                        <svg aria-hidden="true" class="w-10 h-10 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                        </svg>
+                        <span class="text-gray-800 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
                     </a>
                     <h4 class=" inline-flex text-center ">Financial and Grant management</h4>
                     
@@ -132,7 +133,7 @@
                         
                         <div class="md:mr-72 ml-3" >
                             
-                            <div class="grid grid-cols-3 mt-5">
+                            <div class="grid grid-cols-3 mt-5 pl-5">
                                 <h4 class="tab-links active-class text-[#2F4858] text-sm md:text-xl" onclick="opentab('lecture')">Lecture Note</h4>
                                 <h4 class="tab-links text-[#2F4858] text-sm md:text-xl" onclick="opentab('document')">Document</h4>
                                 <h4 class="tab-links text-[#2F4858] text-sm md:text-xl" onclick="opentab('assignment')">Assignment</h4>
@@ -140,8 +141,8 @@
                             </div>
                             <div>
                                 <div class=" active-tab  tab-contents border text-[#4A4242EB] shadow-lg rounded-lg border-[#B7B3B3] mt-3 " id="lecture">
-                                    <h4 class=" px-5 pt-3 font-semibold text-lg">What is  Financial Management ?</h4>
-                                    <p class="p-5 text-sm text-opacity-95 md:text-lg">
+                                    <h4 class="px-3  md:px-5 pt-3 font-semibold text-base md:text-lg">What is  Financial Management ?</h4>
+                                    <p class="p-5 text-opacity-95 md:text-lg">
                                         Financial management is a relatively modern
                                         field that has developed over the course of the 20th century. 
                                         Prior to the early 1900s, financial decision-making was typically 
@@ -152,8 +153,8 @@
                                         sophisticated financial decision-making became apparent. One of the earliest 
                                         pioneers in the field was J.P. Morgan, who developed new techniques for
                                     </p>
-                                    <h4 class="px-5 font-semibold text-lg">History Of Financial Management ?</h4>
-                                    <p class="p-5 text-sm text-opacity-95 md:text-lg">
+                                    <h4 class="px-3 md:px-5 font-semibold text-base md:text-lg">History Of Financial Management ?</h4>
+                                    <p class="p-5 text-opacity-95 md:text-lg">
                                         Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and experience to make financial decisions.
                                         The field of financial management began to emerge in the early 1900s, as the complexity of business operations increased and the need for more sophisticated financial decision-making became apparent. One of the earliest pioneers in the field was J.P. Morgan, who developed new techniques for 
                                         In the post-World War II period, financial management became an increasingly important part of corporate decision-making. As businesses grew larger and more complex, the need for sophisticated financial management strategies became even more important.
@@ -162,7 +163,7 @@
                                 
                                 <div class="tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 " id="document">
                                     
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-10">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-5">
                                         <div class="items-center flex justify-between p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md">
                                             <div class=""><i class="ri-file-text-line"></i></div>
                                             <div>
@@ -175,7 +176,7 @@
                                         </div>
                                        
                                     </div>
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-10">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-5">
                                         <div class="items-center flex justify-between p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md">
                                             <div class=""><i class="ri-file-text-line"></i></div>
                                             <div>
@@ -188,7 +189,7 @@
                                         </div>
                                        
                                     </div>
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-10">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-5">
                                         <div class="items-center flex justify-between p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md">
                                             <div class=""><i class="ri-file-text-line"></i></div>
                                             <div>
@@ -201,7 +202,7 @@
                                         </div>
                                        
                                     </div>
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-10">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[90%] mx-auto md:mr-auto md:ml-5">
                                         <div class="items-center flex justify-between p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md">
                                             <div class=""><i class="ri-file-text-line"></i></div>
                                             <div>
@@ -218,8 +219,8 @@
                                     
                                     
                                 </div>
-                                <div class=" tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 py-10 " id="assignment">
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  mx-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
+                                <div class=" tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 " id="assignment">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  pl-5 mr-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
                                         <div class="items-center flex justify-between py-5 px-2 xl:p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md col-span-4 xl:col-span-5  ">
                                             <span class=""><i class="ri-file-text-line"></i></span>
                                             <p class="text-sm text-semibold py-3 text-[#4A4242]">Basics of Financial Management.PDF</p>
@@ -230,7 +231,7 @@
                                             <button >Submit</button>
                                         </div>
                                     </div>
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  mx-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  pl-5 mr-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
                                         <div class="items-center flex justify-between py-5 px-2 xl:p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md col-span-4 xl:col-span-5  ">
                                             <span class=""><i class="ri-file-text-line"></i></span>
                                             <p class="text-sm text-semibold py-3 text-[#4A4242]">Basics of Financial Management.PDF</p>
@@ -241,7 +242,7 @@
                                             <button >Submit</button>
                                         </div>
                                     </div>
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  mx-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  pl-5 mr-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
                                         <div class="items-center flex justify-between py-5 px-2 xl:p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md col-span-4 xl:col-span-5  ">
                                             <span class=""><i class="ri-file-text-line"></i></span>
                                             <p class="text-sm text-semibold py-3 text-[#4A4242]">Basics of Financial Management.PDF</p>
@@ -252,7 +253,7 @@
                                             <button >Submit</button>
                                         </div>
                                     </div>
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  mx-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  pl-5 mr-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
                                         <div class="items-center flex justify-between py-5 px-2 xl:p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md col-span-4 xl:col-span-5  ">
                                             <span class=""><i class="ri-file-text-line"></i></span>
                                             <p class="text-sm text-semibold py-3 text-[#4A4242]">Basics of Financial Management.PDF</p>
@@ -263,7 +264,7 @@
                                             <button >Submit</button>
                                         </div>
                                     </div>
-                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  mx-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
+                                    <div class=" text-[#4A4242B5] text-opacity-70  my-5 w-[95%] xl:w-[90%]  pl-5 mr-auto grid md:grid-cols-6 items-center lg:gap-10 gap-3 ">
                                         <div class="items-center flex justify-between py-5 px-2 xl:p-5 text-[#4A4242B5] text-opacity-70 text-xl bg-[#D9D9D9] rounded-md col-span-4 xl:col-span-5  ">
                                             <span class=""><i class="ri-file-text-line"></i></span>
                                             <p class="text-sm text-semibold py-3 text-[#4A4242]">Basics of Financial Management.PDF</p>
@@ -292,7 +293,7 @@
     </div>
     
 
-    <script src="../js/navBar.js"></script>
+    <script src="../js/instructornav.js"></script>
     <script> 
         var tablinks=document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");

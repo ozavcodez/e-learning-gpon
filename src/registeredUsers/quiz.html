@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="../output.css" rel="stylesheet">
+
+</head>
+<body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
+    <div class="relative">
+        <div id="navBar"></div>
+        <div class="lg:ml-60">
+            <header class="top  z-40  pt-1 sticky   bg-white" >
+                <div class="items-center lg:hidden flex justify-around">
+                    <div class=" " onclick="showMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#2F4858"></path></svg>
+                    </div>
+                    <div class="flex items-center ">
+                        <img src="../Images/goalbglogo.png" alt="" class="w-10">
+                        <p class="pl-1 font-extrabold text-[#2F4858] text-xs">GoalPrime Education</p>
+                    </div>
+                    <div>
+                        <i class=" text-2xl ri-notification-2-line"></i>
+        
+                    </div>
+                </div>
+                <div class="hidden lg:flex md:mt-0 mt-6  px-2 md:px-10  py-3 md:gap-8 gap-6 items-center text-[#263238] text-sm md:text-lg font-bold">
+                    <a href="courses.html" class="hover:bg-slate-100 rounded-full p-1 ">
+                        <span class="text-gray-800 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </a>
+                    <h4 class=" inline-flex text-center ">Financial and Grant management</h4>
+                    
+                </div>
+                <div class="border-2 border-b shadow-2xl "></div>
+        
+            </header>
+            <form action="" class="pt-[60px] my-10 w-[80%] mx-auto">
+                <div class="">
+                    <fieldset class="">
+                        <legend class="flex items-center text-[#4A4242] font-semibold py-5 "> 
+                            <span >
+                                <h1>1.</h1>
+                            </span>
+                            What is the primary goal of financial management ?
+                        </legend>
+
+                        
+                        <div class="flex flex-row mb-6 items-center md:w-[60%] px-5 py-6  bg-[#F9F2E2] shadow-lg rounded-lg ">
+                            <input  id="" type="radio" value="informal"   name="education" class=" w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-base  font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Securing of individual government loans.</label>                              
+                        </div>
+                        <div class="flex flex-row mb-6 items-center md:w-[60%] px-5 py-6  bg-[#F9F2E2] shadow-lg rounded-lg ">
+                            <input  id="" type="radio" value="Professionally"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-base  font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> To share bond and dividends</label>                              
+                        </div>
+                        <div class="flex flex-row mb-6 items-center md:w-[60%] px-5 py-6  bg-[#F9F2E2] shadow-lg rounded-lg ">
+                            <input  id="" type="radio" value="online"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-base  font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> To maximize shareholders wealth or the firm value</label>                              
+                        </div>
+                        <div class="flex flex-row mb-6 items-center md:w-[60%] px-5 py-6  bg-[#F9F2E2] shadow-lg rounded-lg ">
+                            <input  id="" type="radio" value="Others"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checkbox-1" class="ml-2 text-base  font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Setting standards for industries</label>                              
+                        </div>
+                            
+                    </fieldset>
+                </div>
+                <div class="pagination mt-5 mb-5 md:mb-0 flex items-center justify-between">
+                    <button class="pointer hidden bg-[#2F4858] text-white text-center py-3 px-10 hover:bg-opacity-95 rounded-md focus:ring-4 focus:ring-[#2F4858] focus:outline-offset-2 dark:focus:ring-gray-800" id="prev">Previous</button>
+                    <button class="pointer bg-[#2F4858] text-white text-center py-3 px-10 hover:bg-opacity-95 rounded-md focus:ring-4 focus:ring-[#2F4858]  dark:focus:ring-gray-800" id="next">Next</button>
+                    <button class="pointer hidden bg-[#2F4858] text-white text-center py-3 px-10 hover:bg-opacity-95 rounded-md focus:ring-4 focus:ring-[#2F4858]  dark:focus:ring-gray-800" id="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+        <div>
+            <h4 class="  absolute right-20 text-[#005B6F73] text-opacity-50 font-medium text-lg">Powered by UNOCHA</h4>
+        </div>
+    </div>
+   
+    <script src="../js/instructornav.js"></script>
+</body>
+</html>

@@ -16,8 +16,34 @@
         <div id="navBar"></div>
         <!-- main view -->
         <div class="lg:ml-60">
-            <header class="top  z-50  pt-1 sticky   bg-white" >
-                <div class="flex md:mt-0 mt-6  px-2 md:px-10  py-3 md:gap-8 gap-6 items-center text-[#263238] text-sm md:text-lg font-bold">
+            <header class="top  z-40  pt-1 sticky   bg-white" >
+                <header class="top  z-40  pt-1 sticky   bg-white" >
+                    <div class="items-center lg:hidden flex justify-between w-[90%] mx-auto">
+                        <div class=" " onclick="showMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#2F4858"></path></svg>
+                        </div>
+                        <div class="flex items-center ">
+                            <img src="Images/goalbglogo.png" alt="" class="w-10">
+                            <p class="pl-1 font-extrabold text-[#2F4858] text-xs">GoalPrime Education</p>
+                        </div>
+                        <div>
+                            <i class=" text-2xl ri-notification-2-line"></i>
+    
+                        </div>
+                    </div>
+                    <div class=" hidden lg:flex md:mt-0 mt-6 px-10  py-3 md:gap-8 gap-20 text-[#263238] text-lg font-bold">
+                        <a href="availablecourses.html" class="hover:bg-slate-100 rounded-full p-1 ">
+                            <svg aria-hidden="true" class="w-10 h-10 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                            </svg>
+                        </a>
+                        <h4 class=" inline-flex text-center ">Financial and Grant management</h4>
+                        
+                    </div>
+                    <div class="border-2 border-b shadow-2xl "></div>
+    
+                </header>
+                <!-- <div class="flex md:mt-0 mt-6  px-2 md:px-10  py-3 md:gap-8 gap-6 items-center text-[#263238] text-sm md:text-lg font-bold">
                     <a href="availablecourses.html" class="hover:bg-slate-100 rounded-full p-1 ">
                         <svg aria-hidden="true" class="w-5 h-5 md:w-10 md:h-10 text-black sm:w-6 sm:h-6 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
@@ -25,7 +51,7 @@
                     </a>
                     <h4 class=" inline-flex text-center ">Financial and Grant management</h4>
                     
-                </div>
+                </div> -->
             </header>
             <div class="border-2 border-b shadow-2xl "></div>
 
@@ -39,8 +65,7 @@
                         <div class=" mx-10" >
                             <figure class="relative  ">
                                 <div class=" rounded-2xl bg-[#D9D9D9] h-48 w-full">
-                                <img src="" alt="" class=" object-cover">
-                
+                                    <img src="" alt="" class=" object-cover">
                                 </div>
                                 <figcaption class="absolute flex flex-col h-full w-full m-auto top-0 left-0">
                                     <div class="  m-auto ">
@@ -48,15 +73,15 @@
                                     </div>
                                 </figcaption>
                             </figure>
-                            <div class="grid grid-cols-3 mt-5">
+                            <div class="grid grid-cols-3 mt-5 px-3">
                                 <h4 class="tab-links active-class text-[#2F4858] text-base md:text-xl" onclick="opentab('modules')">Course Modules</h4>
                                 <h4 class="tab-links text-[#2F4858] text-base md:text-xl" onclick="opentab('description')">Course Description</h4>
                                 <h4 class="tab-links text-[#2F4858] text-base md:text-xl" onclick="opentab('certification')">Certification</h4>
                                 
                             </div>
                             <div>
-                                <div class="  tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 h-80" id="description">
-                                    <p class="p-10 text-justify text-[#4A4242EB] text-opacity-95 text-lg">
+                                <div class="  tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 " id="description">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400 p-5 pb-10 md:text-lg">
                                         Financial management is a relatively modern
                                         field that has developed over the course of the 20th century. 
                                         Prior to the early 1900s, financial decision-making was typically 
@@ -68,15 +93,15 @@
                                         pioneers in the field was J.P. Morgan, who developed new techniques for
                                     </p>
                                 </div>
-                                <div class=" tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 " id="certification">
-                                    <div class="p-10">
+                                <div class=" tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 p-3" id="certification">
+                                    <div class="">
                                         <p class="  text-justify text-[#4A4242EB] text-opacity-95 text-lg">
                                             Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
                                         </p>
                                         <div class="flex justify-between py-10 pl-5 ">
                                             <div>
                                                 <h4 class="text-lg text-[#1C1B1F] font-semibold">Your Gpon Certificate  is: </h4>
-                                                <ul class="list-image-[url(Images/verified.png)] space-y-3 text-lg pt-5">
+                                                <ul class="list-image-[url(Images/verified.png)] space-y-3 text-lg p-5">
                                                     <li>ideal for sharing with potential employers</li>
                                                     <li>Can be  added to your CV, social media profiles</li>
                                                     <li>Can be  added to your CV, social media profiles</li>
@@ -91,20 +116,114 @@
                                 <div class="active-tab tab-contents border shadow-lg rounded-lg border-[#B7B3B3] mt-3 " id="modules">
                                     
                                     <div class="border border-[#B7B3B3] mb-2">
-                                        <div class="items-center flex justify-between p-5">
-                                            <div class="">
-                                                <p class="text-sm text-semibold py-3 text-[#4A4242]">MODULE 1</p>
-                                                <h4 class="font-semibold text-lg text-[#2F4858]">Introduction  to Financial & Management</h4>
+                                        <div class="">
+                                            
+                                            <div id="accordion-open" data-accordion="collapse"  data-active-classes="bg-inherit">
+                                                <h2 id="accordion-open-heading-1" class="">
+                                                    <div class="w-full py-5 px-3 font-medium text-left text-gray-500 border border-b-0 border-[#B7B3B3]  dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">
+                                                        <div  class="flex items-center justify-between" >
+                                                            <button  data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1" >
+                                                                <span class="flex items-center   text-start">
+                                                                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> 
+                                                                    <div class="pl-3">
+                                                                        <h4>Module 1</h4>
+                                                                    </div>
+                                                                    
+                                                                </span>
+                                                            </button >
+                                                            <button class=" border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-1 md:py-2 text-bold focus:ring-4 focus:ring-[#009348] dark:focus:ring-gray-800" >Purchase</button >
+                                                        </div>
+                                                        <h4 class="font-semibold text-sm  md:text-lg text-[#2F4858] pt-2 md:pt-0 pl-2 md:pl-8 ">Introduction  to Financial & Management</h4>
+                                                    </div>
+                                                    
+                                                </h2>
+                                                <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
+                                                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                                    <p class="mb-2 text-gray-500 dark:text-gray-400 md:pl-5 text-base">
+                                                        Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                                                    </p>
+                                                </div>
+                                                </div>
+                                                <h2 id="accordion-open-heading-2">
+                                                    <div class="w-full py-5 px-3 font-medium text-left text-gray-500 border border-b-0 border-[#B7B3B3]  dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">
+                                                        <div  class="flex items-center justify-between" >
+                                                            <button  data-accordion-target="#accordion-open-body-2" aria-expanded="true" aria-controls="accordion-open-body-2" >
+                                                                <span class="flex items-center   text-start">
+                                                                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> 
+                                                                    <div class="pl-3">
+                                                                        <h4>Module 2</h4>
+                                                                    </div>
+                                                                    
+                                                                </span>
+                                                            </button >
+                                                            <button class=" border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-1 md:py-2 text-bold focus:ring-4 focus:ring-[#009348] dark:focus:ring-gray-800" >Purchase</button >
+                                                        </div>
+                                                        <h4 class="font-semibold text-sm  md:text-lg text-[#2F4858] pt-2 md:pt-0 pl-2 md:pl-8 ">Introduction  to Financial & Management</h4>
+                                                    </div>
+                                                </h2>
+                                                <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+                                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                                        <p class="mb-2 text-gray-500 dark:text-gray-400 pl-5 text-base">
+                                                            Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h2 id="accordion-open-heading-3">
+                                                    <div class="w-full py-5 px-3 font-medium text-left text-gray-500 border border-b-0 border-[#B7B3B3]  dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">
+                                                        <div  class="flex items-center justify-between" >
+                                                            <button  data-accordion-target="#accordion-open-body-3" aria-expanded="true" aria-controls="accordion-open-body-3" >
+                                                                <span class="flex items-center   text-start">
+                                                                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> 
+                                                                    <div class="pl-3">
+                                                                        <h4>Module 3</h4>
+                                                                    </div>
+                                                                    
+                                                                </span>
+                                                            </button >
+                                                            <button class=" border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-1 md:py-2 text-bold focus:ring-4 focus:ring-[#009348] dark:focus:ring-gray-800" >Purchase</button >
+                                                        </div>
+                                                        <h4 class="font-semibold text-sm  md:text-lg text-[#2F4858] pt-2 md:pt-0 pl-2 md:pl-8 ">Introduction  to Financial & Management</h4>
+                                                    </div>
+                                                </h2>
+                                                <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+                                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                                        <p class="mb-2 text-gray-500 dark:text-gray-400 pl-5 text-base">
+                                                            Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h2 id="accordion-open-heading-4">
+                                                    <div class="w-full py-5 px-3 font-medium text-left text-gray-500 border border-b-0 border-[#B7B3B3]  dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">
+                                                        <div  class="flex items-center justify-between" >
+                                                            <button  data-accordion-target="#accordion-open-body-4" aria-expanded="true" aria-controls="accordion-open-body-4" >
+                                                                <span class="flex items-center   text-start">
+                                                                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> 
+                                                                    <div class="pl-3">
+                                                                        <h4>Module 4</h4>
+                                                                    </div>
+                                                                    
+                                                                </span>
+                                                            </button >
+                                                            <button class=" border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-1 md:py-2 text-bold focus:ring-4 focus:ring-[#009348] dark:focus:ring-gray-800" >Purchase</button >
+                                                        </div>
+                                                        <h4 class="font-semibold text-sm  md:text-lg text-[#2F4858] pt-2 md:pt-0 pl-2 md:pl-8 ">Introduction  to Financial & Management</h4>
+                                                    </div>
+                                                </h2>
+                                                <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-4">
+                                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                                        <p class="mb-2 text-gray-500 dark:text-gray-400 pl-5 text-base ">
+                                                            Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-2 text-bold" >
-                                                <button >Purchase</button>
-                                            </div>
+  
+                                           
                                         </div>
-                                        <p class="px-5 pb-2 text-justify text-[#4A4242EB] text-opacity-95 text-sm w-9/12">
-                                            Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
+                                        <p class="px-5 pb-2 text-justify text-[#4A4242EB] text-opacity-80 text-sm w-9/12 ">
                                         </p>
                                     </div>
-                                    <div class="border border-[#B7B3B3]  mb-2">
+                                    <!-- <div class="border border-[#B7B3B3]  mb-2">
                                         <div class="items-center flex justify-between p-5">
                                             <div class="">
                                                 <p class="text-sm text-semibold py-3 text-[#4A4242]">MODULE 2</p>
@@ -117,21 +236,8 @@
                                         <p class="px-5 pb-2 text-justify text-[#4A4242EB] text-opacity-95 text-sm w-9/12">
                                             Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
                                         </p>
-                                    </div>
-                                    <div class="border border-[#B7B3B3]  mb-2">
-                                        <div class="items-center flex justify-between p-5">
-                                            <div class="">
-                                                <p class="text-sm text-semibold py-3 text-[#4A4242]">MODULE 3</p>
-                                                <h4 class="font-semibold text-lg text-[#2F4858]">Introduction  to Financial & Management</h4>
-                                            </div>
-                                            <div class="border-[#009348] bg-[#009348] text-sm px-6 text-white border rounded-lg py-2 text-bold" >
-                                                <button >Purchase</button>
-                                            </div>
-                                        </div>
-                                        <p class="px-5 pb-2 text-justify text-[#4A4242EB] text-opacity-95 text-sm w-9/12">
-                                            Financial management is a relatively modern field that has developed over the course of the 20th century. Prior to the early 1900s, financial decision-making was typically the responsibility of business owners and managers, who relied on their own instincts and ex
-                                        </p>
-                                    </div>
+                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -164,5 +270,6 @@
 
         }
     </script> 
+    <script src="lib/flowbite.min.js"></script>
 </body>
 </html>

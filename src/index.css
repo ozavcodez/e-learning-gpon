@@ -1,10 +1,10 @@
 .caro{
-    height: 800px;
+    height: 500px;
   }
 
   @media (min-width:768px) {
     .caro{
-      height: 384px;
+      height: 300px;
     }
   }
 
