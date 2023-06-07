@@ -39,20 +39,16 @@
     </header>
     <!-- main content -->
     <div class="pt-[60px]  ">
-        <form action="">
-            <div class="flex justify-between items-center">
-                <div class="tab-targets ">
-                    <div class=" tab hidden active">Step1 of 4</div>
-                    <div class="tab hidden">Step2 of 4</div>
-                    <div class="tab hidden">Step3 of 4</div>
-                    <div class="tab hidden">Step4 of 4</div>
-                   
-                </div>
-                <div>
-                    <button class="pointer text-[#2F4858] text-lg  pr-32">Exit</button>
-                </div>
+        <form action="" class="container">
+            <div class="tab-targets px-5 md:px-20">
+                <div class=" tab hidden active md:text-[25px]">Step1 of 4</div>
+                <div class="tab hidden md:text-[25px]">Step2 of 4</div>
+                <div class="tab hidden md:text-[25px]">Step3 of 4</div>
+                <div class="tab hidden md:text-[25px]">Step4 of 4</div>
                 
             </div>
+                
+                
             <div class="w-full bg-[#D9D9D9] rounded-full h-[3px] dark:bg-gray-700">
                 <div class="bg-[#2F4858] h-[3px] rounded-full" style="width: 25%" id="pb"></div>
             </div>
@@ -60,44 +56,44 @@
             <div class="tab-lists w-[90%] mx-auto">
                 <div class="tabpanel">
                     <fieldset class="">
-                        <legend class=" items-start text-xl md:text-2xl  text-[#2F4858] py-5 md:w-full">What sort of education have you taught in the past?</legend>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="informal"   name="education" class=" w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> In person, informally</label>                              
+                        <legend class=" items-start  md:text-xl  text-[#2F4858] py-5 md:w-full">What sort of education have you taught in the past?</legend>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="informal"   name="education" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348] ">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> In person, informally</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="Professionally"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> In person, Professionally</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="Professionally"   name="education" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348] ">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> In person, Professionally</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="online"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Online</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="online"   name="education" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348] ">
+                            <label for="checkbox-1" class="ml-10 md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> Online</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="Others"   name="education" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> In person, informally</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="Others"   name="education" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348] ">
+                            <label for="checkbox-1" class="ml-10 md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> In person, informally</label>                              
                         </div>
                             
                     </fieldset>
                 </div>
                 <div class="tabpanel hidden">
                     <fieldset class="">
-                        <legend class=" items-start text-xl md:text-2xl  text-[#2F4858] py-5 md:w-full">How many years of teaching experience do you have?</legend>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="1-2"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> 1-2</label>                              
+                        <legend class=" items-start md:text-xl  text-[#2F4858] py-5 md:w-full">How many years of teaching experience do you have?</legend>
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="1-2"   name="experience" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> 1-2</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="2-4"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> 2-4</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="2-4"   name="experience" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> 2-4</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="3-4"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> 3-4</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="3-4"   name="experience" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> 3-4</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="others"   name="experience" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Others</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="others"   name="experience" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> Others</label>                              
                         </div>
                             
                     </fieldset>
@@ -105,27 +101,27 @@
                 <div class="tabpanel hidden">
                     <fieldset class="">
                         <legend class=" items-start text-xl md:text-2xl  text-[#2F4858] py-5 md:w-full">Which course do you intend to instruct?</legend>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="finance"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Financial and Grant Management</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="finance"   name="course" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> Financial and Grant Management</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="supplychain"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> SupplyChain Management</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="supplychain"   name="course" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> SupplyChain Management</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="psea"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> PSEA/ sSafeguarding</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="psea"   name="course" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> PSEA/ sSafeguarding</label>                              
                         </div>
-                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5  bg-[#FAFAFA] shadow-lg rounded ">
-                            <input  id="" type="radio" value="proposaldev"   name="course" class="w-5 h-5 text-[#D19813] bg-white  border-2 border-[#D19813] rounded-full  ring-[#D19813] focus:ring-[#D19813] dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="checkbox-1" class="ml-2 text-base md:text-lg font-semibold text-[#4A4242ED] text-opacity-90 dark:text-gray-300"> Proposal Development</label>                              
+                        <div class="flex flex-row mb-10 items-center md:w-[50%] p-5   bg-[#92E3A94D]/30 shadow-lg rounded ">
+                            <input  id="" type="radio" value="proposaldev"   name="course" class=" w-5 h-5 text-[#009348] bg-white  border-2 border-[#009348] rounded-full  ring-[#009348] focus:ring-[#009348]">
+                            <label for="checkbox-1" class="ml-10  md:text-lg font-semibold text-[#4A4242BF]/75 text-opacity-90 dark:text-gray-300"> Proposal Development</label>                              
                         </div>
                             
                     </fieldset>
                 </div>
                 <div class="tabpanel hidden">
-                    <h3 class=" pt-10 items-start text-xl md:text-2xl  text-[#2F4858] py-5 md:w-full" >Upload your qualifications</h3>
+                    <h3 class=" pt-10 items-start text-xl md:text-2xl  text-[#2F4858] py-5 md:w-full" >Please upload the following documents to continue</h3>
                     <label for="pic">
                         <div class="px-10 my-20 py-3 bg-[#005B6F73] bg-opacity-40 text-[#2F4858] text-center text-lg font-semibold w-32">
                             <input  type="file" name="" id="pic" class="sr-only" >
@@ -137,10 +133,10 @@
                 </div>
 
                 <!-- pagination button -->
-                <div class="pagination mt-5 mb-5 md:mb-0 flex items-center justify-between">
-                    <button class="pointer hidden bg-[#009348] text-white text-center py-3 px-10 hover:bg-opacity-95" id="prev">Previous</button>
-                    <button class="pointer bg-[#009348] text-white text-center py-3 px-10 hover:bg-opacity-95" id="next">Continue</button>
-                    <button class="pointer hidden bg-[#009348] text-white text-center py-3 px-10 hover:bg-opacity-95" id="submit">Submit</button>
+                <div class="pagination mt-10 mb-10 md:mt-5  md:mb-0 flex flex-col md:flex-row items-center justify-between space-y-2">
+                    <button class="pointer bg-[#009348] text-white text-center py-3 md:px-10 hover:bg-opacity-95 w-full rounded-md shadow md:w-fit " id="next">Continue</button>
+                    <button class="pointer hidden bg-[#009348]/5 hover:bg-[#009348] hover:text-white text-[#009348] text-center py-3 md:px-10 hover:bg-opacity-95 w-full md:w-fit rounded-md shadow" id="prev">Back</button>
+                    <button class="pointer hidden bg-[#009348] text-white text-center py-3 md:px-10 hover:bg-opacity-95 rounded-md shadow w-full md:w-fit" id="submit">Submit</button>
                 </div>
             </div>
             

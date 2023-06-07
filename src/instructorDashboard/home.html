@@ -17,7 +17,7 @@
         <!-- sidebar -->
         <div id="navBar"></div>
         <!-- mainbody -->
-        <div class="lg:ml-60 relative">
+        <div class="lg:ml-60 relative overflow-hidden">
             <header class="  top z-40 sticky border-b border-white bg-white lg:bg-[#2F4858]  py-3   text-sm">
                 <div class="items-center lg:hidden flex justify-around">
                     <div class=" " onclick="showMenu()">
@@ -57,13 +57,10 @@
                 <div class="border-2 border-b shadow-2xl lg:hidden mt-2"></div>
             </header>
             <!-- main content -->
-            <div  class=" w-[90%] mx-auto md:w-[85%] mr-auto md:ml-10 pt-[60px] my-10 rounded-sm">
-                <div class="bg-[#D9D9D9] h-48 w-full">
-                    <img src="" alt="" class=" object-cover">
-    
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+            <div  class=" w-[90%] mx-auto  pt-[60px] my-5 rounded-sm">
+                
+                <div class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:my-10 overflow-x-auto ">
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651] min-w-[200px]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">cohorts</h4>
@@ -83,7 +80,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);" >
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">Assignment</h4>
@@ -103,7 +100,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">Quiz</h4>
@@ -123,7 +120,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">Courses</h4>
@@ -143,7 +140,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">Exam</h4>
@@ -163,7 +160,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">Certification</h4>
@@ -183,7 +180,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+                    <div class=" rounded-2xl drop-shadow-xl space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">Create Courses</h4>
@@ -203,7 +200,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cards rounded-2xl space-y-6 p-3 text-[#00A651]">
+                    <div class=" rounded-2xl hover:shadow-lg space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%); box-shadow: 4px 4px 10px rgba(30, 97, 122, 0.15)">
                         <div class="flex justify-between items-start ">
                             <div class="">
                                 <h4 class="font-bold text-sm tracking-wide leading-relaxed">Announcement</h4>
@@ -211,7 +208,7 @@
                             </div>
                             <div class="rounded-full bg-[#00A651] h-12 w-12 ml-3 ">
                                 <div class="flex justify-center py-4 ">
-                                    <i class=" text-white text-sm   ri-file-text-line"></i>
+                                    <i class=" text-white text-sm   ri-megaphone-line"></i>
                 
                                 </div>
                             </div>
@@ -225,6 +222,116 @@
                     </div>
                     
                 </div>
+                <div class="container grid md:grid-cols-2 pt-10 gap-10 ">
+                    <div>
+                        <h4 class="font-bold text-xl  pb-4 text-[#00A651F2]">Course Tracker </h4>
+                        <div class=" text-[#00A651F2]/95 rounded-2xl px-5 pt-5 pb-20 text-base" style="background: linear-gradient(125.78deg, #FFFFFF 31.14%, #ECFEF4 93.09%); box-shadow: 4px 8px 15px -1px rgba(0, 0, 0, 0.25);">
+                            <div class="grid grid-cols-2 gap-y-5">
+                                <h4 class="font-semibold">Course</h4>
+                                <h4 class="font-semibold">% Usage</h4>
+                                <p>Proposal development</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 45%"></div>
+                                </div>
+                                <p>PSEA/ Safeguarding</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 55%"></div>
+                                </div>
+                                <p>Supplychain Management</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 65%"></div>
+                                </div>
+                                <p>Financial & Grant MGT</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 75%"></div>
+                                </div>
+                                <p>Financial & Grant MGT</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 85%"></div>
+                                </div>
+                                <p>Financial & Grant MGT</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xl  pb-4 text-[#00A651F2]">Notifications </h4>
+                        <div class=" text-[#00A651F2]/95 rounded-2xl px-5 pt-5 pb-20 text-base space-y-2" style="background: linear-gradient(125.78deg, #FFFFFF 31.14%, #ECFEF4 93.09%); box-shadow: 4px 8px 15px -1px rgba(0, 0, 0, 0.25);">
+                            <div class="grid grid-cols-12 pb-2">
+                                <div class="relative">
+                                    <div>
+                                        <i class=" text-3xl ri-notification-2-line font-medium text-[#00A651CC]/50"></i>
+                                    </div>
+                                    <span class=" top-0 left-4 absolute  w-3.5 h-3.5 bg-[#EA1212] text-[#EA1212] border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <div class="col-span-10 space-y-2 ">
+                                    <h4 class="font-bold text-lg   text-[#00A651F2]"> Update your new courses </h4>
+                                    <p class="text-[#00A651CC]/80 text-sm">Endeavour to update your new courses to facilitate faster approval by 
+                                        the admin
+                                    </p>
+                                    <div class="text-[#26323899]/80 flex gap-2 text-xs font-normal items-center">
+                                        <p>Wed 24 Jun, 2023 </p>
+                                        <span class="  w-2 h-2 bg-[#26323899]/80  border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                        <p>10:05pm</p>
+                                    </div>
+                                </div>
+                                <span>
+                                    <i class="text-3xl text-[#EA1212] ri-delete-bin-5-line"></i>
+                                </span>
+                            </div>
+                            <hr class="border-0 h-[2px] bg-gradient-to-r from-[#00A651]/0  via-[#00A651] to-[#00A651]/0 shadow">
+                            <div class="grid grid-cols-12 pb-2">
+                                <div class="relative">
+                                    <div>
+                                        <i class=" text-3xl ri-notification-2-line font-medium text-[#00A651CC]/50"></i>
+                                    </div>
+                                    <span class="top-0 left-4 absolute  w-3.5 h-3.5 bg-[#EA1212] text-[#EA1212] border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <div class="col-span-10 space-y-2 ">
+                                    <h4 class="font-bold text-lg   text-[#00A651F2]"> Update your new courses </h4>
+                                    <p class="text-[#00A651CC]/80 text-sm">Endeavour to update your new courses to facilitate faster approval by 
+                                        the admin
+                                    </p>
+                                    <div class="text-[#26323899]/80 flex gap-2 text-xs font-normal items-center">
+                                        <p>Wed 24 Jun, 2023 </p>
+                                        <span class="  w-2 h-2 bg-[#26323899]/80  border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                        <p>10:05pm</p>
+                                    </div>
+                                </div>
+                                <span>
+                                    <i class="text-3xl text-[#EA1212] ri-delete-bin-5-line"></i>
+                                </span>
+                            </div>
+                            <hr class="border-0 h-[2px] bg-gradient-to-r from-[#00A651]/0  via-[#00A651] to-[#00A651]/0 shadow">
+                            <div class="grid grid-cols-12 pb-2">
+                                <div class="relative">
+                                    <div>
+                                        <i class=" text-3xl ri-notification-2-line font-medium text-[#00A651CC]/50"></i>
+                                    </div>
+                                    <span class="top-0 left-4 absolute  w-3.5 h-3.5 bg-[#EA1212] text-[#EA1212] border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <div class="col-span-10 space-y-2 ">
+                                    <h4 class="font-bold text-lg   text-[#00A651F2]"> Update your new courses </h4>
+                                    <p class="text-[#00A651CC]/80 text-sm">Endeavour to update your new courses to facilitate faster approval by 
+                                        the admin
+                                    </p>
+                                    <div class="text-[#26323899]/80 flex gap-2 text-xs font-normal items-center">
+                                        <p>Wed 24 Jun, 2023 </p>
+                                        <span class="  w-2 h-2 bg-[#26323899]/80  border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                        <p>10:05pm</p>
+                                    </div>
+                                </div>
+                                <span>
+                                    <i class="text-3xl text-[#EA1212] ri-delete-bin-5-line"></i>
+                                </span>
+                            </div>
+                            <hr class="border-0 h-[2px] bg-gradient-to-r from-[#00A651]/0  via-[#00A651] to-[#00A651]/0 shadow">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -232,5 +339,7 @@
     </div>
 
     <script src="../js/instructornav.js"></script> 
+    <script src="../lib/flowbite.min.js"></script> 
+
 </body>
 </html>

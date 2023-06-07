@@ -2,7 +2,7 @@ function  createNav(){
     var holder =""
     
         holder +=
-        `<nav id="menu" class="top-0 hidden lg:block  z-50 lg:z-0 w-[80%] lg:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300 overflow-y-scroll lg:overflow-hidden">
+        `<nav id="menu" class="top-0 hidden lg:block  z-50 lg:z-0 w-[80%] lg:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300 ">
         <div class="hidden md:flex items-center gap-2 p-3">
             <img src="Images/goalPrimeLogoe.png" alt="" class="w-16">
             <h1 class="font-bold mt-1 text-xs text-white">GOALPrime education</h1>
@@ -21,7 +21,7 @@ function  createNav(){
             <p class="text-base py-2 text-center" >Become an Instructor</p>
         </div>
                 
-        <ul class=" side-nav space-y-1  md:space-y-3 md:px-5 md:mt-10 font-normal text-[#D4C9C9] divide-y divide-white md:divide-none">
+        <ul class=" side-nav space-y-1  md:space-y-3 md:px-5 md:mt-10 font-normal text-[#D4C9C9] divide-y divide-white md:divide-none overflow-y-scroll">
             <li >
                 <a href="home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2">
                     <i class="ri-home-4-line order-last md:-order-last"></i>

@@ -2,7 +2,7 @@ function  createNav(){
     var holder =""
     
         holder +=
-        `<nav id="menu" class="top-0 hidden lg:block  z-50 lg:z-0 w-[80%] md:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300 overflow-y-scroll lg:overflow-hidden ">
+        `<nav id="menu" class="top-0 hidden   z-50 lg:z-0 w-[80%] md:w-60  h-screen  fixed  bg-[#2F4858]  transition-all  duration-1000 ease-in-out delay-300  lg:flex flex-col">
         <div class="hidden md:flex items-center gap-2 p-3">
             <img src="../Images/goalPrimeLogoe.png" alt="" class="w-16">
             <h1 class="font-bold mt-1 text-xs text-white">GOALPrime education</h1>
@@ -20,87 +20,100 @@ function  createNav(){
             </span>
             <p class="text-base py-2 text-center" >Become an Instructor</p>
         </div>
+        <div class="invisible hover:visible overflow-auto">
+            <ul class=" side-nav space-y-1  md:space-y-3 md:px-5 md:mt-10 font-normal text-[#D4C9C9] divide-y divide-white md:divide-none visible">
+                <li >
+                    <a href="home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 items-center w-full p-2 rounded-lg transition duration-75 hover:bg-[#00A651]/70  ">
+                        <i class="w-6 h-6 ri-home-4-line order-last md:-order-last"></i>
+                        <p class="text-[15px] pl-3  "  class="nav-links">Home</p>
+                    </a>
+                </li>
+                <li id="mega-menu">
+                    <button type="button" class="flex items-center w-full p-2 transition duration-75  mx-2 rounded-lg group hover:bg-[#00A651]/70 " aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                        <i class="ri-book-mark-line order-last md:-order-last"></i>
+                        <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Courses</span>
+                        <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <ul id="dropdown-example" class="  space-y-1">
+                        <li>
+                            <a href="createcourse.html" class="  flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Create course</a>
+                        </li>
+                        <li>
+                            <a href="createmodule.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">create Module</a>
+                        </li>
+                        <li>
+                            <a href="editcourse.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Edit course</a>
+                        </li>
+                    </ul>
+            </li>
+            
+                <li>       
+                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="videolesson.html" >
+                    <i class="ri-live-line order-last md:-order-last"></i>        
+                        <p class="text-[15px] ml-3">Assignment</p> 
+                    </a>
+                </li>
+            
+                <li>
+                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="quiz.html" >
+                        <i class="ri-questionnaire-line order-last md:-order-last"></i>
+                        <p class="text-[15px] ml-3"> Quiz</p>
+                    </a>
+                </li>
+            
+                <li >
+                    <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="live.html" class="nav-links">
+                        <i class="ri-video-line order-last md:-order-last"></i>
+                    <p class="text-[15px] ml-3">Live Classes</p> 
+                    </a>
+                </li>
+            
+                <li >        
+                    <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="emptyexam.html" >
+                        <i class="ri-book-read-fill order-last md:-order-last"></i>
+                        <p class="text-[15px] ml-3">Exam</p> 
+                    </a>
+                </li>
+            
+                <li >
+                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="purchasehistory.html">
+                        <i class="ri-history-line order-last md:-order-last"></i>
+                        <p class="text-[15px] ml-3">Announcement</p>
+                    </a>
+                </li>
+            
+                <li >
+                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="notification.html" class="nav-links">
+                        <i class="ri-notification-2-line order-last md:-order-last"></i>
+                        <p class="text-[15px] ml-3">Notification</p> 
+                    </a>
+                </li>
+            
+                <li class="">   
+                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2 rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="profile.html" >
+                        <i class="ri-user-line order-last md:-order-last"></i>
+                        <p class="text-[15px] ml-3">Profile</p> 
+                    </a>
+                </li>
+            
                 
-        <ul class=" side-nav space-y-1  md:space-y-3 md:px-5 md:mt-10 font-normal text-[#D4C9C9] divide-y divide-white md:divide-none">
-            <li >
-                <a href="home.html" class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2">
-                    <i class="ri-home-4-line order-last md:-order-last"></i>
-                    <p class="text-[15px] pl-3  "  class="nav-links">Home</p>
-                </a>
-            </li>
+            </ul>
+        </div>
+                
         
-            <li >
-                            
-                <a class=" nav-links mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="createcourse.html" >
-                    <i class="ri-book-mark-line order-last md:-order-last"></i>
-                    <p class="text-[15px] ml-3">Courses</p>
-                </a>
-            </li>
-            
-            <li>       
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="videolesson.html" >
-                <i class="ri-live-line order-last md:-order-last"></i>        
-                    <p class="text-[15px] ml-3">Assignment</p> 
-                </a>
-            </li>
-        
-            <li>
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="quiz.html" >
-                    <i class="ri-questionnaire-line order-last md:-order-last"></i>
-                    <p class="text-[15px] ml-3"> Quiz</p>
-                </a>
-            </li>
-        
-            <li >
-                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="live.html" class="nav-links">
-                    <i class="ri-video-line order-last md:-order-last"></i>
-                <p class="text-[15px] ml-3">Live Classes</p> 
-                </a>
-            </li>
-        
-            <li >        
-                <a class="mx-2 flex justify-between md:justify-normal md:gap-2 rounded-sm hover:bg-[#05f27896] py-2 px-2" href="emptyexam.html" >
-                    <i class="ri-book-read-fill order-last md:-order-last"></i>
-                    <p class="text-[15px] ml-3">Exam</p> 
-                </a>
-            </li>
-        
-            <li >
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="purchasehistory.html">
-                    <i class="ri-history-line order-last md:-order-last"></i>
-                    <p class="text-[15px] ml-3">Announcement</p>
-                </a>
-            </li>
-        
-            <li >
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="notification.html" class="nav-links">
-                    <i class="ri-notification-2-line order-last md:-order-last"></i>
-                    <p class="text-[15px] ml-3">Notification</p> 
-                </a>
-            </li>
-        
-            <li class="">   
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="profile.html" >
-                    <i class="ri-user-line order-last md:-order-last"></i>
-                    <p class="text-[15px] ml-3">Profile</p> 
-                </a>
-            </li>
-        
-            
-        </ul>
         <hr class=" mt-3 text-white ">
         <ul class=" side-nav space-y-1 overscroll-y-auto  md:space-y-3 md:px-5  font-normal text-[#D4C9C9] divide-y divide-white md:divide-none">
         
             <li >
                 
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="help.html" >
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70 py-2 px-2" href="help.html" >
                     <i class="ri-question-mark order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Help</p> 
                 </a>
             </li>
         
             <li  >
-                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-sm hover:bg-[#05f27896] py-2 px-2" href="signin.html" >
+                <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="signin.html" >
                     <i class="ri-shut-down-line order-last md:-order-last"></i>
                     <p class="text-[15px] ml-3">Log Out</p> 
                 </a>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
+    <div class="relative">
+        <div id="navBar"></div>
+        <!-- main view -->
+        <div class="lg:ml-60">
+            <header class="top  z-40  pt-1 sticky   bg-white" >
+                <div class="items-center lg:hidden flex justify-between w-[90%] mx-auto">
+                    <div class=" " onclick="showMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#2F4858"></path></svg>
+                    </div>
+                    <div class="flex items-center ">
+                        <img src="Images/goalbglogo.png" alt="" class="w-10">
+                        <p class="pl-1 font-extrabold text-[#2F4858] text-xs">GoalPrime Education</p>
+                    </div>
+                    <div>
+                        <i class=" text-2xl ri-notification-2-line"></i>
+
+                    </div>
+                </div>
+                <div class=" hidden lg:flex md:mt-0 mt-6 px-10  py-3 md:gap-8 gap-20 text-[#263238] text-lg font-bold">
+                    <a href="home.html" class="hover:bg-slate-100 rounded-full p-1 ">
+                        <span class="text-gray-800 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </a>
+                    <h4 class=" inline-flex text-center ">Notifications</h4>
+                    
+                </div>
+                <div class="border-2 border-b shadow-2xl "></div>
+
+            </header>
+
+            <!-- <hr class="text-white drop-shadow-2xl"> -->
+            <!--  view-->
+            <div class=" w-[90%] mx-auto  pt-[60px] md:my-10 " >
+                <h4 class="font-bold text-xl  pb-4 text-[#00A651F2] md:hidden">Notifications </h4>
+
+               <div class="relative mb-5 mt-2 md:mt-10">
+                    <span class="-top-4 left-4 absolute  w-3.5 h-3.5 bg-[#00A651]  border-2 border-white dark:border-gray-800 rounded-full"></span>
+
+                    <div class=" text-[#4A4242]/95 rounded-2xl md:p-5 text-base space-y-2" style="background: linear-gradient(125.78deg, #FFFFFF 31.14%, #ECFEF4 93.09%); box-shadow: 4px 8px 15px -1px rgba(0, 0, 0, 0.25);">
+                        
+                        <div class="grid grid-cols-12 gap-2  p-2 md:p-0 md:pb-2 text-start md:items-center">
+                            <div class="relative">
+                                <div class="col-span-1">
+                                    <i class="ri-volume-up-line text-2xl md:text-3xl  font-medium text-[#2F4858]"></i>
+                                </div>
+                            </div>
+                            <div class=" col-span-8 md:col-span-9 xl:col-span-10 space-y-2 ">
+                                <h4 class="font-bold text-base md:text-lg   text-[#4A4242]"> Update your new courses </h4>
+                                <p class="text-[#4A4242]/80 text-sm">
+                                    Welcome samuel we have array of courses for you, make sure you check them out
+                                </p>
+                                
+                            </div>
+                            <span class="col-span-2 md:col-span-1">
+                                <div class="flex justify-end ">
+                                    <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-[#00A651]/20 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-[#00A651]/30 dark:focus:ring-gray-700 rounded-lg text-sm " type="button">
+                                        <span class="sr-only">Open dropdown</span>
+                                        <i class="ri-more-2-line text-3xl "></i>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                        <ul class="py-2" aria-labelledby="dropdownButton">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <i class="ri-more-2-line text-3xl flex justify-end"></i> -->
+                                <div class="text-[#4A4242]/80 flex gap-2 text-base font-normal items-center justify-end">
+                                    <i class="hidden md:block text-[#D19813] ri-time-line"></i>
+                                    <p>10:05pm</p>
+
+                                </div>
+                            </span>
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+               <div class="relative mb-5 mt-2 md:mt-10">
+                    <span class="-top-4 left-4 absolute  w-3.5 h-3.5 bg-[#00A651]  border-2 border-white dark:border-gray-800 rounded-full"></span>
+
+                    <div class=" text-[#4A4242]/95 rounded-2xl md:p-5 text-base space-y-2" style="background: linear-gradient(125.78deg, #FFFFFF 31.14%, #ECFEF4 93.09%); box-shadow: 4px 8px 15px -1px rgba(0, 0, 0, 0.25);">
+                        
+                        <div class="grid grid-cols-12 gap-2  p-2 md:p-0 md:pb-2 text-start md:items-center">
+                            <div class="relative">
+                                <div class="col-span-1">
+                                    <i class="ri-volume-up-line text-2xl md:text-3xl  font-medium text-[#2F4858]"></i>
+                                </div>
+                            </div>
+                            <div class=" col-span-8 md:col-span-9 xl:col-span-10 space-y-2 ">
+                                <h4 class="font-bold text-base md:text-lg   text-[#4A4242]"> Update your new courses </h4>
+                                <p class="text-[#4A4242]/80 text-sm">
+                                    Welcome samuel we have array of courses for you, make sure you check them out
+                                </p>
+                                
+                            </div>
+                            <span class="col-span-2 md:col-span-1">
+                                <div class="flex justify-end ">
+                                    <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-[#00A651]/20 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-[#00A651]/30 dark:focus:ring-gray-700 rounded-lg text-sm " type="button">
+                                        <span class="sr-only">Open dropdown</span>
+                                        <i class="ri-more-2-line text-3xl "></i>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                        <ul class="py-2" aria-labelledby="dropdownButton">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <i class="ri-more-2-line text-3xl flex justify-end"></i> -->
+                                <div class="text-[#4A4242]/80 flex gap-2 text-base font-normal items-center justify-end">
+                                    <i class="hidden md:block text-[#D19813] ri-time-line"></i>
+                                    <p>10:05pm</p>
+
+                                </div>
+                            </span>
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+               <div class="relative mb-5 mt-2 md:mt-10">
+                    <span class="-top-4 left-4 absolute  w-3.5 h-3.5 bg-[#00A651]  border-2 border-white dark:border-gray-800 rounded-full"></span>
+
+                    <div class=" text-[#4A4242]/95 rounded-2xl md:p-5 text-base space-y-2" style="background: linear-gradient(125.78deg, #FFFFFF 31.14%, #ECFEF4 93.09%); box-shadow: 4px 8px 15px -1px rgba(0, 0, 0, 0.25);">
+                        
+                        <div class="grid grid-cols-12 gap-2  p-2 md:p-0 md:pb-2 text-start md:items-center">
+                            <div class="relative">
+                                <div class="col-span-1">
+                                    <i class="ri-volume-up-line text-2xl md:text-3xl  font-medium text-[#2F4858]"></i>
+                                </div>
+                            </div>
+                            <div class=" col-span-8 md:col-span-9 xl:col-span-10 space-y-2 ">
+                                <h4 class="font-bold text-base md:text-lg   text-[#4A4242]"> Update your new courses </h4>
+                                <p class="text-[#4A4242]/80 text-sm">
+                                    Welcome samuel we have array of courses for you, make sure you check them out
+                                </p>
+                                
+                            </div>
+                            <span class="col-span-2 md:col-span-1">
+                                <div class="flex justify-end ">
+                                    <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-[#00A651]/20 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-[#00A651]/30 dark:focus:ring-gray-700 rounded-lg text-sm " type="button">
+                                        <span class="sr-only">Open dropdown</span>
+                                        <i class="ri-more-2-line text-3xl "></i>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                        <ul class="py-2" aria-labelledby="dropdownButton">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-[#ECFEF4] dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <i class="ri-more-2-line text-3xl flex justify-end"></i> -->
+                                <div class="text-[#4A4242]/80 flex gap-2 text-base font-normal items-center justify-end">
+                                    <i class="hidden md:block text-[#D19813] ri-time-line"></i>
+                                    <p>10:05pm</p>
+
+                                </div>
+                            </span>
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+               
+                 
+            </div>
+           
+        </div>
+    </div>
+    
+
+    <script src="js/navBar.js"></script>
+    <script src="lib/flowbite.min.js"></script> 
+    
+</body>
+</html>

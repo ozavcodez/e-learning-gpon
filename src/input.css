@@ -1,4 +1,19 @@
 @tailwind base;
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  /* border: 3px solid var(--primary); */
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -14,7 +29,7 @@
         /* background-color: white; */
       }
       .cards {
-        @apply bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative 
+        @apply bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg relative 
       }
       .active {
         @apply bg-[#00A651]
@@ -22,9 +37,7 @@
       .tab-targets .tab.active{
         color: #2F4858;
         font-weight: 600;
-        font-size: 25px;
         padding: 4px;
-        padding-left: 80px;
         display: block;
         background: inherit;
       }
