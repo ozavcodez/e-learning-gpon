@@ -36,13 +36,16 @@ function  createNav(){
                     </button>
                     <ul id="dropdown-example" class="  space-y-1">
                         <li>
-                            <a href="createcourse.html" class="  flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Create course</a>
+                            <a href="createcourse.html" class="  flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Create Course</a>
                         </li>
                         <li>
                             <a href="createmodule.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">create Module</a>
                         </li>
                         <li>
-                            <a href="editcourse.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Edit course</a>
+                            <a href="editcourse.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">View Course</a>
+                        </li>
+                        <li>
+                            <a href="viewmodule.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">View Module</a>
                         </li>
                     </ul>
             </li>
