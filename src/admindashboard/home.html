@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="../output.css" rel="stylesheet">
+
+</head>
+<body class="scroll-smooth" style="font-family: 'Inter', sans-serif;">
+    <div class="relative">
+        <!-- sidebar -->
+        <div id="navBar"></div>
+        <!-- mainbody -->
+        <div class="lg:ml-60 relative overflow-hidden">
+            <header class="  top z-40 sticky border-b border-white bg-white lg:bg-[#2F4858]  py-3   text-sm">
+                <div class="items-center lg:hidden flex justify-around">
+                    <div class=" " onclick="showMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="#2F4858"></path></svg>
+                    </div>
+                    <div class="flex items-center ">
+                        <img src="../Images/goalbglogo.png" alt="" class="w-10">
+                        <p class="pl-1 font-extrabold text-[#2F4858] text-xs">GoalPrime Education</p>
+                    </div>
+                    <div>
+                        <i class=" text-2xl ri-notification-2-line"></i>
+
+                    </div>
+                </div>
+                <div class="items-center hidden lg:grid grid-cols-3">
+                    <nav class="col-span-2 ">
+                        <ul class="flex gap-x-5 lg:gap-x-20">
+                            <li class="text-white hover:border-b-2 border-[#00A651]">
+                                <a href="">Courses</a>
+                            </li>
+        
+                            <li class="text-white hover:border-b-2 border-[#00A651]">
+                                <a href="/src/instructor/instructorstep.html">Become an Instructor</a>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+                    <div class="flex md:mt-0 mt-6 md:gap-8 gap-10 ">
+                        <i class="mt-1 text-2xl text-white ri-notification-2-line"></i>
+                        <span class="flex items-center">
+                            <img src="/src/Images/user-photoz.png" class="rounded-full ">
+                            <i class="mt-1 ml-3 ri-arrow-down-s-fill text-white"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="border-2 border-b shadow-2xl lg:hidden mt-2"></div>
+            </header>
+            <!-- main content -->
+            <div  class=" w-[90%] mx-auto  pt-[60px] my-5 rounded-sm">
+                
+                <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 pb-3 gap-10 md:my-10 overflow-x-auto whitespace-nowrap flex-nowrap">
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651] min-w-[200px] col-span-1 whitespace-nowrap flex-nowrap" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
+                        <div class="flex justify-between items-start flex-nowrap ">
+                            <div class="">
+                                <h4 class="font-bold text-xl tracking-wide leading-relaxed">Users</h4>
+                                <h2 class="font-semibold text-4xl tracking-wider leading-relaxed">2256</h2>
+                            </div>
+                            <img src="../Images/user-account.png" alt="">
+                        </div>
+                        <a href="cohorts.html" class="flex justify-between font-bold">
+                            <h4 class="font-bold text-base tracking-wide leading-relaxed">view</h4>
+                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651] col-span-1" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);" >
+                        <div class="flex justify-between items-start ">
+                            <div class="">
+                                <h4 class="font-bold text-xl tracking-wide leading-relaxed">Courses</h4>
+                                <h2 class="font-semibold text-4xl tracking-wider leading-relaxed">12</h2>
+                            </div>
+                            <img src="../Images/book-stack.png" alt="">
+                        </div>
+                        <a href="" class="flex justify-between font-bold">
+                            <h4 class="font-bold text-base tracking-wide leading-relaxed">view</h4>
+                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class=" rounded-2xl shadow-md hover:shadow-lg space-y-6 p-3 text-[#00A651]" style="background: linear-gradient(120.16deg, #FFFFFF 15.11%, #DDFDED 91.19%);">
+                        <div class="flex justify-between items-start ">
+                            <div class="">
+                                <h4 class="font-bold text-xl tracking-wide leading-relaxed">Support <br> Services</h4>
+                                <!-- <h2 class="font-semibold text-4xl tracking-wider leading-relaxed">12</h2> -->
+                            </div>
+                            <img src="../Images/online-support.png" alt="">
+                        </div>
+                        <a href="" class="flex justify-between font-bold">
+                            <h4 class="font-bold text-base tracking-wide leading-relaxed">view</h4>
+                            <svg aria-hidden="true" class="w-6 h-3  sm:w-6 sm:h-6 dark:text-gray-800 hover:bg-slate-100 rounded-full  font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="container grid md:grid-cols-2 pt-10 gap-10 ">
+                    <div>
+                        <h4 class="font-bold text-xl  pb-4 text-[#00A651F2]">Course Tracker </h4>
+                        <div class=" text-[#00A651F2]/95 rounded-2xl px-5 pt-5 pb-20 text-base" style="background: linear-gradient(125.78deg, #FFFFFF 31.14%, #ECFEF4 93.09%); box-shadow: 4px 8px 15px -1px rgba(0, 0, 0, 0.25);">
+                            <div class="grid grid-cols-2 gap-y-5">
+                                <h4 class="font-semibold">Course</h4>
+                                <h4 class="font-semibold">% Usage</h4>
+                                <p>Proposal development</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 45%"></div>
+                                </div>
+                                <p>PSEA/ Safeguarding</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 55%"></div>
+                                </div>
+                                <p>Supplychain Management</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 65%"></div>
+                                </div>
+                                <p>Financial & Grant MGT</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 75%"></div>
+                                </div>
+                                <p>Financial & Grant MGT</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 85%"></div>
+                                </div>
+                                <p>Financial & Grant MGT</p>
+                                <div class="w-full h-4 mb-4 bg-white border border-[#00A651] rounded-full dark:bg-gray-700">
+                                    <div class="h-4 bg-[#00A651F2] rounded-full dark:bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none " style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xl  pb-4 text-[#00A651F2]">Notifications </h4>
+                        <div class=" text-[#00A651F2]/95 rounded-2xl px-5 pt-5 pb-20 text-base space-y-2" style="background: linear-gradient(125.78deg, #FFFFFF 31.14%, #ECFEF4 93.09%); box-shadow: 4px 8px 15px -1px rgba(0, 0, 0, 0.25);">
+                            <div class="grid grid-cols-12 pb-2">
+                                <div class="relative">
+                                    <div>
+                                        <i class=" text-3xl ri-notification-2-line font-medium text-[#00A651CC]/50"></i>
+                                    </div>
+                                    <span class=" top-0 left-4 absolute  w-3.5 h-3.5 bg-[#EA1212] text-[#EA1212] border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <div class="col-span-10 space-y-2 ">
+                                    <h4 class="font-bold text-lg   text-[#00A651F2]"> Update your new courses </h4>
+                                    <p class="text-[#00A651CC]/80 text-sm">Endeavour to update your new courses to facilitate faster approval by 
+                                        the admin
+                                    </p>
+                                    <div class="text-[#26323899]/80 flex gap-2 text-xs font-normal items-center">
+                                        <p>Wed 24 Jun, 2023 </p>
+                                        <span class="  w-2 h-2 bg-[#26323899]/80  border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                        <p>10:05pm</p>
+                                    </div>
+                                </div>
+                                <span>
+                                    <i class="text-3xl text-[#EA1212] ri-delete-bin-5-line"></i>
+                                </span>
+                            </div>
+                            <hr class="border-0 h-[2px] bg-gradient-to-r from-[#00A651]/0  via-[#00A651] to-[#00A651]/0 shadow">
+                            <div class="grid grid-cols-12 pb-2">
+                                <div class="relative">
+                                    <div>
+                                        <i class=" text-3xl ri-notification-2-line font-medium text-[#00A651CC]/50"></i>
+                                    </div>
+                                    <span class="top-0 left-4 absolute  w-3.5 h-3.5 bg-[#EA1212] text-[#EA1212] border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <div class="col-span-10 space-y-2 ">
+                                    <h4 class="font-bold text-lg   text-[#00A651F2]"> Update your new courses </h4>
+                                    <p class="text-[#00A651CC]/80 text-sm">Endeavour to update your new courses to facilitate faster approval by 
+                                        the admin
+                                    </p>
+                                    <div class="text-[#26323899]/80 flex gap-2 text-xs font-normal items-center">
+                                        <p>Wed 24 Jun, 2023 </p>
+                                        <span class="  w-2 h-2 bg-[#26323899]/80  border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                        <p>10:05pm</p>
+                                    </div>
+                                </div>
+                                <span>
+                                    <i class="text-3xl text-[#EA1212] ri-delete-bin-5-line"></i>
+                                </span>
+                            </div>
+                            <hr class="border-0 h-[2px] bg-gradient-to-r from-[#00A651]/0  via-[#00A651] to-[#00A651]/0 shadow">
+                            <div class="grid grid-cols-12 pb-2">
+                                <div class="relative">
+                                    <div>
+                                        <i class=" text-3xl ri-notification-2-line font-medium text-[#00A651CC]/50"></i>
+                                    </div>
+                                    <span class="top-0 left-4 absolute  w-3.5 h-3.5 bg-[#EA1212] text-[#EA1212] border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <div class="col-span-10 space-y-2 ">
+                                    <h4 class="font-bold text-lg   text-[#00A651F2]"> Update your new courses </h4>
+                                    <p class="text-[#00A651CC]/80 text-sm">Endeavour to update your new courses to facilitate faster approval by 
+                                        the admin
+                                    </p>
+                                    <div class="text-[#26323899]/80 flex gap-2 text-xs font-normal items-center">
+                                        <p>Wed 24 Jun, 2023 </p>
+                                        <span class="  w-2 h-2 bg-[#26323899]/80  border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                        <p>10:05pm</p>
+                                    </div>
+                                </div>
+                                <span>
+                                    <i class="text-3xl text-[#EA1212] ri-delete-bin-5-line"></i>
+                                </span>
+                            </div>
+                            <hr class="border-0 h-[2px] bg-gradient-to-r from-[#00A651]/0  via-[#00A651] to-[#00A651]/0 shadow">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="../js/adminnav.js"></script> 
+    <script src="../lib/flowbite.min.js"></script> 
+
+</body>
+</html>
