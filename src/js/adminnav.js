@@ -28,24 +28,12 @@ function  createNav(){
                         <p class="text-[15px] pl-3  "  class="nav-links">Home</p>
                     </a>
                 </li>
-                <li id="mega-menu">
-                    <button type="button" class="flex items-center w-full p-2 transition duration-75  mx-2 rounded-lg group hover:bg-[#00A651]/70 " aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                        <i class="ri-book-mark-line order-last md:-order-last"></i>
-                        <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Courses mgt</span>
-                        <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                    <ul id="dropdown-example" class="  space-y-1">
-                        <li>
-                            <a href="createmodule.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Cohorts</a>
-                        </li>
-                        <li>
-                            <a href="editcourse.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Instructors</a>
-                        </li>
-                        <li>
-                            <a href="viewmodule.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Admins</a>
-                        </li>
-                    </ul>
-            </li>
+                <li>       
+                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="courses.html" >
+                    <i class="ri-book-mark-line order-last md:-order-last"></i>
+                        <p class="text-[15px] ml-3">Courses mgt</p> 
+                    </a>
+                </li>
             <li id="mega-menu">
                 <button type="button" class="flex items-center w-full p-2 transition duration-75  mx-2 rounded-lg group hover:bg-[#00A651]/70 " aria-controls="dropdown-users" data-collapse-toggle="dropdown-users">
                     <i class="ri-book-mark-line order-last md:-order-last"></i>
@@ -57,7 +45,7 @@ function  createNav(){
                         <a href="cohorts.html" class="  flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/rts70 ">Cohorts</a>
                     </li>
                     <li>
-                        <a href="instructors.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Instructors</a>
+                        <a href="instructor.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Instructors</a>
                     </li>
                     <li>
                         <a href="admins.html" class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-[#00A651]/70 ">Admins</a>
@@ -67,7 +55,7 @@ function  createNav(){
             </li>
             
                 <li>       
-                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="videolesson.html" >
+                    <a class="nav-links mx-2 flex mt-1 justify-between md:justify-normal md:gap-2  rounded-lg transition duration-75 hover:bg-[#00A651]/70  py-2 px-2" href="support.html" >
                     <i class="ri-live-line order-last md:-order-last"></i>        
                         <p class="text-[15px] ml-3">Support request</p> 
                     </a>
